@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color:white;
+  font-size: 1.03em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: xx-large;
+  margin-bottom: 1em;
+  color: rgb(204, 184, 6);
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: x-large;
+  margin-bottom: 1em;
+  color: rgb(204, 184, 6);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: black;
+}
+
+section {
+  padding: 0 2em;
+}
+
+.logoMenu {
+  width: 8em;
+  padding: 1em;
+}
+
+.menuApp {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 2em;
+}
+
+.homeMenuList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeMenuList li a {
+  padding: 0.5rem 0.5rem;
+  display: block;
+}
+
+.homeMenuList li a:hover {
+  border:1px solid rgb(204, 184, 6);
+  border-radius: 2px;
+  color: rgb(204, 184, 6);
+}
+.homeMenuList li a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.authentification {
+  padding: 0.5rem 0.5rem;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.authentification:hover {
+  border:1px solid rgb(204, 184, 6);
+  border-radius: 2px;
+  color: rgb(204, 184, 6);
+}
+
+.content {
+  padding: 0.5em;
+}
+
+@media (max-width: 750px) {
+    .homeMenuList {
+      flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+  .menuApp {
+    flex-direction: column;
   }
 }

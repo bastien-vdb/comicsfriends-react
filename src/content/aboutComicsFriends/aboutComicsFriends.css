@@ -1,0 +1,125 @@
+.section {
+    display: block;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+}
+
+.section:hover {
+    border: 1px solid yellow;
+}
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.line .bloc {
+    min-width: 50%;
+    flex: 1 1 300px;
+}
+
+.line .bloc > div {
+    text-align: center;
+}
+
+.line1 .bloc1 img{
+    width: 80%;
+    height: 80%;
+}
+
+.section2 img{
+    width: 50%;
+    height: 50%;
+}
+
+.section2 {
+    justify-content: center;
+}
+
+.section2, line1 {
+    flex-direction: row;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+
+.section2 .line1 .bloc {
+    min-width: 25%;
+    padding: 1.5em 1em;
+    text-align: justify;
+    text-justify: distribute;
+    text-align-last: left;
+}
+.section2 .line1 .bloc h2 {
+    text-align: center;
+}
+
+.section3 {
+    padding: 0 1.5em;
+    text-align: justify;
+    text-justify:distribute;
+}
+
+.section3 .cardGroup {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em;
+}
+.section3 .card {
+    width: 15rem;
+    margin: 0.5em;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size:medium;
+    font-weight: bold;
+    padding:2em;
+    flex: 1 1 200px;
+}
+
+.section3 .redCard {
+    background-color: rgb(221, 52, 52);
+    z-index: 4;
+}
+.section3 .redCard p, .section3 .redCard h1{
+    color: black;
+}
+.section3 .blueCard {
+    background-color: rgb(29, 21, 104);
+    z-index: 2;
+}
+.section3 .yellowCard {
+    background-color: rgb(177, 177, 37);
+    z-index: 3;
+}
+.section3 .yellowCard p, .section3 .yellowCard h1{
+    color: black;
+}
+.section3 .blackCard {
+    background-color: rgb(27, 27, 27);
+    z-index: 1;
+}
+
+.section5 {
+    padding: 1em;
+    height: 100vh;
+}
+
+.section5 .team .teamList {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section5 .team .teamList li {
+    margin: 0.3em 0;
+}
+
+/*Mobile view*/
+@media (max-width: 750px) {
+    .space {
+        display: none;
+    }
+}
+
