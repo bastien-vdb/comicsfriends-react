@@ -1,9 +1,12 @@
 import logo from './logo.svg';
-import './App.css';
 import AboutComicsFriends from './content/aboutComicsFriends/AboutComicsFriends.js';
-//import logoMenu from './logoMenu.png';
+import Account from './Account/Account';
+import { Modal } from 'antd';
+import 'antd/dist/antd.css';
+import './App.css';
 
 function App() {
+
   return (
     <div>
       <div className='menuApp'>
@@ -12,21 +15,19 @@ function App() {
         </section>
         <nav>
           <ul className='homeMenuList'>
-            <li><a href="#">Home</a></li>
             <li><a href="#">First collection</a></li>
-            <li><a href="#">Wallet</a></li>
-            <li><a href="#">Wallet2</a></li>
-            <li><a href="#">Wallet3</a></li>
-            <li><a href="#">Wallet4</a></li>
+            <li><a href="#">Goals</a></li>
+            <li><a href="#">Genesis</a></li>
+            <li><a href="#">Team</a></li>
           </ul>
         </nav>
         <section className='authentification'>
-          Authentification
+          <a href="#"><Account/></a>
         </section>  
       </div>
       <div className='content'>
           <AboutComicsFriends/>
-        </div>
+      </div>
     </div>
   );
 }
