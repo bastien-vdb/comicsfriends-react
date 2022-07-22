@@ -15,10 +15,11 @@ function App() {
         </section>
         <nav>
           <ul className='homeMenuList'>
-            <li><a href="#">First collection</a></li>
-            <li><a href="#">Goals</a></li>
-            <li><a href="#">Genesis</a></li>
-            <li><a href="#">Team</a></li>
+            <li><a href="#introduction">First collection</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#genesis">Genesis</a></li>
+            <li><a href="#partnership">Partnership</a></li>
+            <li><a href="#team">Team</a></li>
           </ul>
         </nav>
         <section className='authentification'>

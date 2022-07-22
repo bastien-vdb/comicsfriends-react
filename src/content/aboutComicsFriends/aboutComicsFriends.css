@@ -29,9 +29,13 @@
     height: 80%;
 }
 
-.section2 img{
-    width: 50%;
-    height: 50%;
+.section2 h1 {
+    margin: auto;
+}
+.section2 .comicsFriendspic3{
+    max-width: 40%;
+    max-height: 40%;
+    margin: auto;
 }
 
 .section2 {
@@ -39,9 +43,7 @@
 }
 
 .section2, line1 {
-    flex-direction: row;
-    flex-direction: row;    
-    flex-wrap: wrap;
+    
 }
 
 .section2 .line1 .bloc {

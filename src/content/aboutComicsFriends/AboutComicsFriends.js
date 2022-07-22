@@ -8,7 +8,7 @@ function AboutComicsFriends(props) {
     return (
         <div>
             <div>
-                <section className='section section1'>
+                <section className='section section1' id='introduction'>
                     <div className='line line1'>
                         <div className='bloc bloc1'>
                             <div>
@@ -40,9 +40,9 @@ function AboutComicsFriends(props) {
                         </div>
                     </div>
                 </section>
-                <section className='section section2'>
+                <section className='section section2' id='goals'>
                     <h1>Comics Friends Goals</h1>
-                    <img src={comicsFriendspic3} alt="comicsFriendspic3"/>
+                    <img className='comicsFriendspic3' src={comicsFriendspic3} alt="comicsFriendspic3"/>
                     <div className='line line1'>
                         <div className='bloc bloc1'>
                             <h2>Guiding artists</h2>
@@ -86,7 +86,7 @@ function AboutComicsFriends(props) {
                     </div>
                 </section>
 
-                <section className='section section3'>
+                <section className='section section3' id='genesis'>
                     <div>
                         <h1>Comics Friends’ Genesis NFT collection</h1>
                         <p>
@@ -144,7 +144,7 @@ function AboutComicsFriends(props) {
                 </div>
                 </section>
 
-                <section className='section section4'>
+                <section className='section section4' id="partnership">
                     <div className='line line1'>
                         <div className='bloc bloc1'>
                             <div>
@@ -174,7 +174,7 @@ function AboutComicsFriends(props) {
                     </div>
                 </section>
                 <section className='section section5'>
-                    <div className='team'>
+                    <div className='team' id='team'>
                         <h1>Team</h1>
                         <p>
                             Introducing the Comics Friends team. The team is made up of a range of individuals with expertise 
