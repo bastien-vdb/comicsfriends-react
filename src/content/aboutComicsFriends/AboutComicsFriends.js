@@ -128,10 +128,10 @@ function AboutComicsFriends(props) {
                             ecosystem, including access to the Metaverse Museum and the Web 3 forum, as well as benefits on upcoming drops.<br/>
                             The different levels will be ranked by 4 different colours:
                             <ul style={{margin:'3em auto'}}>
-                                <li>- Red</li>
-                                <li>- Blue</li>
-                                <li>- Yellow</li>
-                                <li>- Black</li>
+                                <li>Red</li>
+                                <li>Blue</li>
+                                <li>Yellow</li>
+                                <li>Black</li>
                             </ul>
                             Black being the least common and red being the most common.
                             Individual cards will have differentiating benefits.
