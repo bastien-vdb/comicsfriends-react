@@ -6,10 +6,6 @@
     margin-bottom: 5em;
 }
 
-.section:hover {
-    border: 1px solid yellow;
-}
-
 .line {
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +55,7 @@
 
 .section3 {
     padding: 0 1.5em;
-    text-align: justify;
+    text-align: center;
     text-justify:distribute;
 }
 
@@ -67,39 +63,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 3em;
-}
-.section3 .card {
-    width: 15rem;
-    margin: 0.5em;
-    border-radius: 10px;
-    border: 1px solid white;
-    font-size:medium;
-    font-weight: bold;
-    padding:2em;
-    flex: 1 1 200px;
-}
-
-.section3 .redCard {
-    background-color: rgb(221, 52, 52);
-    z-index: 4;
-}
-.section3 .redCard p, .section3 .redCard h1{
-    color: black;
-}
-.section3 .blueCard {
-    background-color: rgb(29, 21, 104);
-    z-index: 2;
-}
-.section3 .yellowCard {
-    background-color: rgb(177, 177, 37);
-    z-index: 3;
-}
-.section3 .yellowCard p, .section3 .yellowCard h1{
-    color: black;
-}
-.section3 .blackCard {
-    background-color: rgb(27, 27, 27);
-    z-index: 1;
+    justify-content: space-around;
 }
 
 .section5 {
@@ -109,9 +73,14 @@
 
 .section5 .team .teamList {
     margin-top: 2em;
+}
+
+.section5 .team .teamList ul {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 6em auto;
 }
 
 .section5 .team .teamList li {
@@ -123,5 +92,6 @@
     .space {
         display: none;
     }
+    
 }
 

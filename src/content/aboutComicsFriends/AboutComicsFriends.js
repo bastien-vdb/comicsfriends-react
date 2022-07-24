@@ -1,10 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './aboutComicsFriends.css';
 import comicsFriendspic1 from './comicsFriendspic1.png';
 import comicsFriendspic2 from './comicsFriendspic2.png';
 import comicsFriendspic3 from './comicsFriendspic3.png';
 
 function AboutComicsFriends(props) {
+
+    const [isCardClicked, setCardClicked] = useState(true);
+    const [isRedCardVisible, setRedCardVisible] = useState('none');
+    const [isBlueCardVisible, setBlueCardVisible] = useState('none');
+    const [isYellowCardVisible, setYellowCardVisible] = useState('none');
+    const [isBlackCardVisible, setBlackCardVisible] = useState('none');
+
+    const showCard = (card) => {
+        if (card === 'red') {
+            setRedCardVisible('block');
+            setBlueCardVisible('none');
+            setYellowCardVisible('none');
+            setBlackCardVisible('none');
+        }
+        if (card === 'blue') {
+            setRedCardVisible('none');
+            setBlueCardVisible('block');
+            setYellowCardVisible('none');
+            setBlackCardVisible('none');
+        }
+        if (card === 'yellow') {
+            setRedCardVisible('none');
+            setBlueCardVisible('none');
+            setYellowCardVisible('block');
+            setBlackCardVisible('none');
+        }
+        if (card === 'black') {
+            setRedCardVisible('none');
+            setBlueCardVisible('none');
+            setYellowCardVisible('none');
+            setBlackCardVisible('block');
+        }
+    }
+
     return (
         <div>
             <div>
@@ -93,7 +127,7 @@ function AboutComicsFriends(props) {
                             The Comic friends’ NFT collection will be made of 4 different comics bubbles giving access to  the whole Comics Friends
                             ecosystem, including access to the Metaverse Museum and the Web 3 forum, as well as benefits on upcoming drops.<br/>
                             The different levels will be ranked by 4 different colours:
-                            <ul>
+                            <ul style={{margin:'3em auto'}}>
                                 <li>- Red</li>
                                 <li>- Blue</li>
                                 <li>- Yellow</li>
@@ -102,46 +136,60 @@ function AboutComicsFriends(props) {
                             Black being the least common and red being the most common.
                             Individual cards will have differentiating benefits.
                         </p>
+                        <p style={{fontSize:'2em', color:'firebrick', borderBottom:'3px dashed white'}}>Hover the card below</p>
                     </div>
-                <div className='cardGroup'>
-                    <div className='card redCard'>
-                        <h1>RED</h1>
-                        <p>
-                            - Benefits on all upcoming NFT collections or specific objects created by the Comics Friends Virtual Museum.
-                            - The right to expose works in upcoming exhibitions.
-                            - Access to the Comics Friends Forum
-                            - Name within the museum. 
-                        </p>  
+                    <div className='cardGroup'>
+                        <div onMouseOver={()=>showCard('red')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid firebrick'}}>RED</span></div>
+                        <div onMouseOver={()=>showCard('blue')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid dodgerblue'}}>BLUE</span></div>
+                        <div onMouseOver={()=>showCard('yellow')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid rgb(204, 184, 6)'}}>YELLOW</span></div>
+                        <div onMouseOver={()=>showCard('black')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid white'}}>BLACK</span></div>
+                        <div onClick={()=>setRedCardVisible('none')} style={{display: isRedCardVisible, backgroundColor:'firebrick', border:'1px solid white', height:'fit-content', width: '30em'}}>
+                            <div className="flip-card-inner">
+                                <div className="flip-card-back">
+                                    <h1>RED</h1>
+                                    <p>Benefits on all upcoming NFT collections or specific objects created by the Comics Friends</p>
+                                    <p>Virtual Museum. - The right to expose works in upcoming exhibitions.</p>
+                                    <p>Access to the Comics Friends Forum - Name within the museum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div onClick={()=>setBlueCardVisible('none')} style={{display: isBlueCardVisible, backgroundColor:'dodgerblue',  border:'1px solid white', height:'fit-content', width: '30em'}}>
+                            <div className="flip-card">
+                                <div className="flip-card-inner">
+                                    <div className="flip-card-back">
+                                        <h1>BLUE</h1>
+                                        <p>Benefits on the Moebius NFT Collection.</p>
+                                        <p>The right to expose works in upcoming exhibitions.</p>
+                                        <p>Access to the Comics Friends Forum</p>
+                                        <p>Name within the museum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div onClick={()=>setYellowCardVisible('none')} style={{display: isYellowCardVisible, backgroundColor:'rgb(204, 184, 6)', border:'1px solid white', height:'fit-content', width:'30em'}}>
+                            <div className="flip-card">
+                                <div className="flip-card-back">
+                                    <h1 style={{color:'white'}}>YELLOW</h1>
+                                    <p>The right to share work to the permanent museum collection and upcoming exhibitions.</p>
+                                    <p>Benefits on all upcoming NFT collections or specific objects created by the Comics Friends Virtual Museum.</p>
+                                    <p>Access to the Comics Friends Forum</p>
+                                    <p>Name within the museum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div onClick={()=>setBlackCardVisible('none')} style={{display: isBlackCardVisible, backgroundColor:'black', border:'1px solid white', height:'fit-content', width:'30em'}}>
+                            <div className="flip-card-inner">
+                                <div className="flip-card-back">
+                                    <h1>BLACK</h1>
+                                    <p>The right to share work to the permanent museum collection and upcoming exhibitions.</p>
+                                    <p>Airdrop of the Moebius NFT collection</p>
+                                    <p>Benefits on all upcoming NFT collections or specific objects created by the Comics Friends Virtual Museum.</p>
+                                    <p>Access to the Comics Friends Forum</p>
+                                    <p>Name within the museum.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className='card blueCard'>
-                    <   h1>BLUE</h1>
-                        <p>
-                            - Benefits on the Moebius NFT Collection.
-                            - The right to expose works in upcoming exhibitions.
-                            - Access to the Comics Friends Forum
-                            - Name within the museum.
-                        </p>
-                    </div>
-                    <div className='card yellowCard'>
-                        <h1>YELLOW</h1>
-                        <p>
-                            - The right to share work to the permanent museum collection and upcoming exhibitions.
-                            - Benefits on all upcoming NFT collections or specific objects created by the Comics Friends Virtual Museum.
-                            - Access to the Comics Friends Forum
-                            - Name within the museum.
-                        </p>
-                    </div>
-                    <div className='card blackCard'>
-                        <h1>BLACK</h1>
-                        <p>
-                            - The right to share work to the permanent museum collection and upcoming exhibitions.
-                            - Airdrop of the Moebius NFT collection
-                            - Benefits on all upcoming NFT collections or specific objects created by the Comics Friends Virtual Museum.
-                            - Access to the Comics Friends Forum
-                            - Name within the museum.
-                        </p>
-                    </div>
-                </div>
                 </section>
 
                 <section className='section section4' id="partnership">
@@ -181,15 +229,21 @@ function AboutComicsFriends(props) {
                             in their individual fields of work. The commonality between all of them is their shared passion 
                             for the comic book universe.
                         </p>
-                        <ul className='teamList'>
-                            <li>Arthur Fuchs DG musée</li>
-                            <li>Adrien Fuchs DG ComicsFriends</li>
-                            <li>Ruben Sananes CEO Player One Labs</li>
-                            <li>Alex Vuillaume COO Player one labs</li>
-                            <li>Éric Schahl Avocat</li>
-                            <li>Jennifer Westjohn DA</li>
-                            <li>Bastien Vermot de Boisrolin Développeur</li>
-                        </ul>
+                        <div className='teamList'>
+                            <ul className='t_level1'>
+                                <li>Arthur Fuchs - DG musée <li><img src="./teampic/ARFCH.png"/></li></li>
+                                <li>Adrien Fuchs - DG ComicsFriends <li><img src="./teampic/ADFCH.png"/></li></li>
+                                <li>Ruben Sananes - CEO Player One Labs <li><img src="./teampic/RUSN.png"/></li></li>
+                            </ul>
+                            <ul className='t_level2'>
+                            <li>Éric Schahl - Lawyer <li><img src="./teampic/ERSCH.png"/></li></li>
+                                <li>Alex Vuillaume COO Player one labs <li><img src="./teampic/ALVU.png"/></li></li>
+                            </ul>
+                            <ul className='t_level3'>
+                                <li>Jennifer Westjohn - DA <li><img src="./teampic/JEWE.png"/></li></li>
+                                <li>Bastien Vermot de Boisrolin - Developer <li><img style={{width:'150px'}} src="./teampic/VDBB.png"/></li></li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </div>
