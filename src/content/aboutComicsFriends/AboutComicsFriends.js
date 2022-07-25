@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './aboutComicsFriends.css';
 import comicsFriendspic1 from './comicsFriendspic1.png';
 import comicsFriendspic2 from './comicsFriendspic2.png';
 import comicsFriendspic3 from './comicsFriendspic3.png';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 function AboutComicsFriends(props) {
 
@@ -39,11 +42,36 @@ function AboutComicsFriends(props) {
         }
     }
 
+    useEffect(()=>{
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+            
+          
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 3000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+          
+          });
+    },[])
+
     return (
         <div>
             <div>
                 <section className='section section1' id='introduction'>
-                    <div className='line line1'>
+                    <div data-aos="fade-up-right" className='line line1'>
                         <div className='bloc bloc1'>
                             <div>
                                 <img src={comicsFriendspic1} alt="comicsFriendspic1"/>
@@ -52,7 +80,7 @@ function AboutComicsFriends(props) {
                         <div className='bloc bloc2 space'>
                         </div>
                     </div>
-                    <div className='line line2'>
+                    <div data-aos="fade-down-left" className='line line2'>
                         <div className='bloc bloc1 space'>
                             <div></div>
                         </div>
@@ -76,9 +104,9 @@ function AboutComicsFriends(props) {
                 </section>
                 <section className='section section2' id='goals'>
                     <h1>Comics Friends Goals</h1>
-                    <img className='comicsFriendspic3' src={comicsFriendspic3} alt="comicsFriendspic3"/>
+                    <img data-aos="zoom-out-down" className='comicsFriendspic3' src={comicsFriendspic3} alt="comicsFriendspic3"/>
                     <div className='line line1'>
-                        <div className='bloc bloc1'>
+                        <div data-aos="zoom-in" className='bloc bloc1'>
                             <h2>Guiding artists</h2>
                             <p>
                                 In the past comic book, artists have often been overlooked in the world of art or they haven’t 
@@ -90,7 +118,7 @@ function AboutComicsFriends(props) {
                                 to ensure that the artists’ vision and desired outcome are respected at each step of the way.
                             </p>
                         </div>
-                        <div className='bloc bloc2'>
+                        <div data-aos="zoom-in" className='bloc bloc2'>
                             <h2>Creating the first-ever virtual comic museum</h2>
                             <p>
                             Comic book art is often seen as less than in the eyes of many, which is why Comics Friends wants to shed a 
@@ -105,7 +133,7 @@ function AboutComicsFriends(props) {
                                 they deserve.
                             </p>
                         </div>
-                        <div className='bloc bloc3'>
+                        <div data-aos="zoom-in" className='bloc bloc3'>
                             <h2>Creating a Web 3-enabled collectors forum</h2>
                             <p>
                             The Comics Friends forum will act as a communal platform where holders of the CF NFT will be able to 
@@ -121,7 +149,7 @@ function AboutComicsFriends(props) {
                 </section>
 
                 <section className='section section3' id='genesis'>
-                    <div>
+                    <div >
                         <h1>Comics Friends’ Genesis NFT collection</h1>
                         <p>
                             The Comic friends’ NFT collection will be made of 4 different comics bubbles giving access to  the whole Comics Friends
@@ -136,13 +164,13 @@ function AboutComicsFriends(props) {
                             Black being the least common and red being the most common.
                             Individual cards will have differentiating benefits.
                         </p>
-                        <p style={{fontSize:'2em', color:'firebrick', borderBottom:'3px dashed white'}}>Hover the card below</p>
+                        <p style={{fontSize:'4em', color:'firebrick', margin: "5em auto", textShadow: "0.2em 0.5em 0.1em #600, 0.4em -0.3em 0.1em "}}>Hover the card below</p>
                     </div>
                     <div className='cardGroup'>
-                        <div onMouseOver={()=>showCard('red')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid firebrick'}}>RED</span></div>
-                        <div onMouseOver={()=>showCard('blue')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid dodgerblue'}}>BLUE</span></div>
-                        <div onMouseOver={()=>showCard('yellow')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid rgb(204, 184, 6)'}}>YELLOW</span></div>
-                        <div onMouseOver={()=>showCard('black')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid white'}}>BLACK</span></div>
+                        <div data-aos="zoom-out-up" onMouseOver={()=>showCard('red')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid firebrick'}}>RED</span></div>
+                        <div data-aos="zoom-out-up" onMouseOver={()=>showCard('blue')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid dodgerblue'}}>BLUE</span></div>
+                        <div data-aos="zoom-in-down" onMouseOver={()=>showCard('yellow')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid rgb(204, 184, 6)'}}>YELLOW</span></div>
+                        <div data-aos="zoom-in-down" onMouseOver={()=>showCard('black')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid white'}}>BLACK</span></div>
                         <div onClick={()=>setRedCardVisible('none')} style={{display: isRedCardVisible, backgroundColor:'firebrick', border:'1px solid white', height:'fit-content', width: '30em'}}>
                             <div className="flip-card-inner">
                                 <div className="flip-card-back">
@@ -196,7 +224,7 @@ function AboutComicsFriends(props) {
                     <div className='line line1'>
                         <div className='bloc bloc1'>
                             <div>
-                                <img style={{border:'2px solid rgb(204, 184, 6)'}} src={comicsFriendspic2} alt="comicsFriendspic2"/>
+                                <img data-aos="fade-left" style={{border:'2px solid rgb(204, 184, 6)'}} src={comicsFriendspic2} alt="comicsFriendspic2"/>
                             </div>
                         </div>
                         <div className='bloc bloc2 space'>
@@ -207,7 +235,7 @@ function AboutComicsFriends(props) {
                             <div></div>
                         </div>
                         <div className='bloc bloc2'>
-                                <div>
+                                <div data-aos="fade-right">
                                     <h1>Comics Friends’ first partner NFT drop</h1>
                                     <p>
                                     The first Comics Friends collection will be a collection by world renown artist Moebius. 
@@ -224,22 +252,22 @@ function AboutComicsFriends(props) {
                 <section className='section section5'>
                     <div className='team' id='team'>
                         <h1>Team</h1>
-                        <p>
+                        <p data-aos="fade-up-left">
                             Introducing the Comics Friends team. The team is made up of a range of individuals with expertise 
                             in their individual fields of work. The commonality between all of them is their shared passion 
                             for the comic book universe.
                         </p>
                         <div className='teamList'>
-                            <ul className='t_level1'>
+                            <ul data-aos="zoom-in-out" className='t_level1'>
                                 <li>Arthur Fuchs - DG musée <li><img src="./teampic/ARFCH.png"/></li></li>
                                 <li>Adrien Fuchs - DG ComicsFriends <li><img src="./teampic/ADFCH.png"/></li></li>
                                 <li>Ruben Sananes - CEO Player One Labs <li><img src="./teampic/RUSN.png"/></li></li>
                             </ul>
-                            <ul className='t_level2'>
+                            <ul data-aos="zoom-in-out" className='t_level2'>
                             <li>Éric Schahl - Lawyer <li><img src="./teampic/ERSCH.png"/></li></li>
                                 <li>Alex Vuillaume COO Player one labs <li><img src="./teampic/ALVU.png"/></li></li>
                             </ul>
-                            <ul className='t_level3'>
+                            <ul data-aos="zoom-in-out" className='t_level3'>
                                 <li>Jennifer Westjohn - DA <li><img src="./teampic/JEWE.png"/></li></li>
                                 <li>Bastien Vermot de Boisrolin - Developer <li><img style={{width:'150px'}} src="./teampic/VDBB.png"/></li></li>
                             </ul>
