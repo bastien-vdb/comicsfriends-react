@@ -1,0 +1,11 @@
+Model Information:
+* title:	Jack and the Giant Storybook
+* source:	https://sketchfab.com/3d-models/jack-and-the-giant-storybook-59f9eee3d8e74e1095f47439af31ef84
+* author:	keylimebreeze (https://sketchfab.com/keylimebreeze)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Jack and the Giant Storybook" (https://sketchfab.com/3d-models/jack-and-the-giant-storybook-59f9eee3d8e74e1095f47439af31ef84) by keylimebreeze (https://sketchfab.com/keylimebreeze) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)

@@ -9,6 +9,8 @@ import Anim3D2 from './anim3D/Anim3D2';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
+
+
 function AboutComicsFriends(props) {
 
     const [isCardClicked, setCardClicked] = useState(true);
@@ -74,7 +76,7 @@ function AboutComicsFriends(props) {
             <div>
                 <section className='anim3D1'>
                     <div>
-                        <Anim3D1/>
+                        <Anim3D2/>
                     </div>
                 </section>
                 <section className='section section1' id='introduction'>
@@ -173,7 +175,7 @@ function AboutComicsFriends(props) {
                             Individual cards will have differentiating benefits.
                         </p>
                             <div>
-                                <Anim3D2/>
+                                <Anim3D1/>
                             </div>
                         <p style={{fontSize:'4em', color:'firebrick', margin: "5em auto", textShadow: "0.2em 0.5em 0.1em #600, 0.4em -0.3em 0.1em "}}>Hover the card below</p>
                     </div>
