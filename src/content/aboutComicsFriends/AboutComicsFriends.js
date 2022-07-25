@@ -3,6 +3,8 @@ import './aboutComicsFriends.css';
 import comicsFriendspic1 from './comicsFriendspic1.png';
 import comicsFriendspic2 from './comicsFriendspic2.png';
 import comicsFriendspic3 from './comicsFriendspic3.png';
+import Anim3D1 from './anim3D/Anim3D1';
+import Anim3D2 from './anim3D/Anim3D2';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -70,6 +72,11 @@ function AboutComicsFriends(props) {
     return (
         <div>
             <div>
+                <section className='anim3D1'>
+                    <div>
+                        <Anim3D1/>
+                    </div>
+                </section>
                 <section className='section section1' id='introduction'>
                     <div data-aos="fade-up-right" className='line line1'>
                         <div className='bloc bloc1'>
@@ -146,6 +153,7 @@ function AboutComicsFriends(props) {
                             </p>
                         </div>
                     </div>
+                    <img style={{width:'50%', margin: 'auto'}} alt="logoYellow comics Friends" src="./logoYellow.png"/>
                 </section>
 
                 <section className='section section3' id='genesis'>
@@ -164,6 +172,9 @@ function AboutComicsFriends(props) {
                             Black being the least common and red being the most common.
                             Individual cards will have differentiating benefits.
                         </p>
+                            <div>
+                                <Anim3D2/>
+                            </div>
                         <p style={{fontSize:'4em', color:'firebrick', margin: "5em auto", textShadow: "0.2em 0.5em 0.1em #600, 0.4em -0.3em 0.1em "}}>Hover the card below</p>
                     </div>
                     <div className='cardGroup'>
@@ -171,7 +182,7 @@ function AboutComicsFriends(props) {
                         <div data-aos="zoom-out-up" onMouseOver={()=>showCard('blue')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid dodgerblue'}}>BLUE</span></div>
                         <div data-aos="zoom-in-down" onMouseOver={()=>showCard('yellow')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid rgb(204, 184, 6)'}}>YELLOW</span></div>
                         <div data-aos="zoom-in-down" onMouseOver={()=>showCard('black')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid white'}}>BLACK</span></div>
-                        <div onClick={()=>setRedCardVisible('none')} style={{display: isRedCardVisible, backgroundColor:'firebrick', border:'1px solid white', height:'fit-content', width: '30em'}}>
+                        <div onClick={()=>setRedCardVisible('none')} style={{display: isRedCardVisible, height:'fit-content', width: '30em'}}>
                             <div className="flip-card-inner">
                                 <div className="flip-card-back">
                                     <h1>RED</h1>
@@ -181,7 +192,7 @@ function AboutComicsFriends(props) {
                                 </div>
                             </div>
                         </div>
-                        <div onClick={()=>setBlueCardVisible('none')} style={{display: isBlueCardVisible, backgroundColor:'dodgerblue',  border:'1px solid white', height:'fit-content', width: '30em'}}>
+                        <div onClick={()=>setBlueCardVisible('none')} style={{display: isBlueCardVisible, height:'fit-content', width: '30em'}}>
                             <div className="flip-card">
                                 <div className="flip-card-inner">
                                     <div className="flip-card-back">
@@ -194,10 +205,10 @@ function AboutComicsFriends(props) {
                                 </div>
                             </div>
                         </div>
-                        <div onClick={()=>setYellowCardVisible('none')} style={{display: isYellowCardVisible, backgroundColor:'rgb(204, 184, 6)', border:'1px solid white', height:'fit-content', width:'30em'}}>
+                        <div onClick={()=>setYellowCardVisible('none')} style={{display: isYellowCardVisible, height:'fit-content', width:'30em'}}>
                             <div className="flip-card">
                                 <div className="flip-card-back">
-                                    <h1 style={{color:'white'}}>YELLOW</h1>
+                                    <h1>YELLOW</h1>
                                     <p>The right to share work to the permanent museum collection and upcoming exhibitions.</p>
                                     <p>Benefits on all upcoming NFT collections or specific objects created by the Comics Friends Virtual Museum.</p>
                                     <p>Access to the Comics Friends Forum</p>
@@ -205,7 +216,7 @@ function AboutComicsFriends(props) {
                                 </div>
                             </div>
                         </div>
-                        <div onClick={()=>setBlackCardVisible('none')} style={{display: isBlackCardVisible, backgroundColor:'black', border:'1px solid white', height:'fit-content', width:'30em'}}>
+                        <div onClick={()=>setBlackCardVisible('none')} style={{display: isBlackCardVisible, height:'fit-content', width:'30em'}}>
                             <div className="flip-card-inner">
                                 <div className="flip-card-back">
                                     <h1>BLACK</h1>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pop Team Epic - Turtle Comic
+* source:	https://sketchfab.com/3d-models/pop-team-epic-turtle-comic-bb6fa60cb12b4b08afb98458a52c4961
+* author:	Spooky Boi (https://sketchfab.com/Aaron13)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pop Team Epic - Turtle Comic" (https://sketchfab.com/3d-models/pop-team-epic-turtle-comic-bb6fa60cb12b4b08afb98458a52c4961) by Spooky Boi (https://sketchfab.com/Aaron13) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
