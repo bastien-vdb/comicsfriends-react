@@ -50,6 +50,8 @@ section {
 .homeMenuList li a {
   padding: 0.5rem 0.5rem;
   display: block;
+  color: white;
+  transition:all 1s;
 }
 
 .homeMenuList li a:hover {
@@ -57,15 +59,13 @@ section {
   border-radius: 2px;
   color: rgb(204, 184, 6);
 }
-.homeMenuList li a {
-  color: white;
-}
 
 .authentification {
   margin-right: 1em;
   padding: 0.5rem 0.5rem;
   display: block;
   cursor: pointer;
+  transition:all 1s;
 }
 
 .authentification:hover {
