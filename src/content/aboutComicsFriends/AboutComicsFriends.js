@@ -3,7 +3,6 @@ import './aboutComicsFriends.css';
 import comicsFriendspic1 from './comicsFriendspic1.png';
 import comicsFriendspic2 from './comicsFriendspic2.png';
 import comicsFriendspic3 from './comicsFriendspic3.png';
-import Anim3D1 from './anim3D/Anim3D1';
 import Anim3D2 from './anim3D/Anim3D2';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -80,7 +79,7 @@ function AboutComicsFriends(props) {
                         <Anim3D2/>
                     </div>
                 </section>
-                <section className='section section1' id='introduction'>
+                <section style={{overflowX:'hidden'}} className='section section1' id='introduction'>
                     <div data-aos="fade-up-right" className='line line1'>
                         <div className='bloc bloc1'>
                             <div>
@@ -112,7 +111,7 @@ function AboutComicsFriends(props) {
                         </div>
                     </div>
                 </section>
-                <section className='section section2' id='goals'>
+                <section style={{overflowX:'hidden'}} className='section section2' id='goals'>
                     <h1>Comics Friends Goals</h1>
                     <img data-aos="zoom-out-down" className='comicsFriendspic3' src={comicsFriendspic3} alt="comicsFriendspic3"/>
                     <div className='line line1'>
@@ -208,7 +207,7 @@ function AboutComicsFriends(props) {
                     </div>
                 </section>
 
-                <section className='section section4' id="partnership">
+                <section style={{overflowX:'hidden'}} className='section section4' id="partnership">
                     <div className='line line1'>
                         <div className='bloc bloc1'>
                             <div>
@@ -237,7 +236,7 @@ function AboutComicsFriends(props) {
                         </div>
                     </div>
                 </section>
-                <section className='section section5'>
+                <section style={{overflowX:'hidden'}} className='section section5'>
                     <div className='team' id='team'>
                         <h1>Team</h1>
                         <p data-aos="fade-up-left">
