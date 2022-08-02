@@ -75,6 +75,11 @@
     text-align: center;
 }
 
+.section3 {
+    background-color: #fffddb88;
+    padding: 3em 0;
+}
+
 .section3 .description {
     padding-left: 20%;
     padding-right: 20%; 
@@ -84,7 +89,8 @@
 
 .section5 {
     padding: 1em;
-    height: 100vh;
+    height: fit-content;
+    background-color: #fffddb88;
 }
 
 .section5 .team .teamList {
@@ -94,9 +100,9 @@
 .section5 .team .teamList ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 6em auto;
+    font-size: 15pxs;
 }
 
 .section5 .team .teamList li {

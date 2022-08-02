@@ -211,7 +211,7 @@ function AboutComicsFriends(props) {
                     <div className='line line1'>
                         <div className='bloc bloc1'>
                             <div>
-                                <img data-aos="fade-left" style={{border:'2px solid rgb(204, 184, 6)'}} src={comicsFriendspic2} alt="comicsFriendspic2"/>
+                                <img data-aos="fade-left" src={comicsFriendspic2} alt="comicsFriendspic2"/>
                             </div>
                         </div>
                         <div className='bloc bloc2 space'>
@@ -238,7 +238,7 @@ function AboutComicsFriends(props) {
                 </section>
                 <section style={{overflowX:'hidden'}} className='section section5'>
                     <div className='team' id='team'>
-                        <h1>Team</h1>
+                        <h1>The team</h1>
                         <p data-aos="fade-up-left">
                             Introducing the Comics Friends team. The team is made up of a range of individuals with expertise 
                             in their individual fields of work. The commonality between all of them is their shared passion 
@@ -246,17 +246,15 @@ function AboutComicsFriends(props) {
                         </p>
                         <div className='teamList'>
                             <ul data-aos="zoom-in-out" className='t_level1'>
-                                <li>Arthur Fuchs - DG musée <li><img src="./teampic/ARFCH.png"/></li></li>
-                                <li>Adrien Fuchs - DG ComicsFriends <li><img src="./teampic/ADFCH.png"/></li></li>
-                                <li>Ruben Sananes - CEO Player One Labs <li><img src="./teampic/RUSN.png"/></li></li>
+                                <li><li><i style={{color:'rgb(204, 184, 6)', fontSize:'2em', marginLeft:'40%'}} class="bi bi-person-badge-fill"></i></li>Arthur Fuchs - DG musée</li>
+                                <li><li><i style={{color:'rgb(204, 184, 6)', fontSize:'2em', marginLeft:'40%'}} class="bi bi-person-badge-fill"></i></li>Adrien Fuchs - DG ComicsFriends</li>
+                                <li><li><i style={{color:'rgb(204, 184, 6)', fontSize:'2em', marginLeft:'40%'}} class="bi bi-person-badge-fill"></i></li>Ruben Sananes - CEO Player One Labs</li>
+                                <li><li><i style={{color:'rgb(204, 184, 6)', fontSize:'2em', marginLeft:'40%'}} class="bi bi-person-badge-fill"></i></li>Éric Schahl - Lawyer</li>
                             </ul>
                             <ul data-aos="zoom-in-out" className='t_level2'>
-                            <li>Éric Schahl - Lawyer <li><img src="./teampic/ERSCH.png"/></li></li>
-                                <li>Alex Vuillaume COO Player one labs <li><img src="./teampic/ALVU.png"/></li></li>
-                            </ul>
-                            <ul data-aos="zoom-in-out" className='t_level3'>
-                                <li>Jennifer Westjohn - DA <li><img src="./teampic/JEWE.png"/></li></li>
-                                <li>Bastien Vermot de Boisrolin - Developer <li><img style={{width:'150px'}} src="./teampic/VDBB.png"/></li></li>
+                            <li><li><i style={{color:'rgb(204, 184, 6)', fontSize:'2em', marginLeft:'40%'}} class="bi bi-person-badge-fill"></i></li>Alex Vuillaume COO Player one labs</li>
+                            <li><li><i style={{color:'rgb(204, 184, 6)', fontSize:'2em', marginLeft:'40%'}} class="bi bi-person-badge-fill"></i></li>Jennifer Westjohn - DA</li>
+                                <li><li><i style={{color:'rgb(204, 184, 6)', fontSize:'2em', marginLeft:'40%'}} class="bi bi-person-badge-fill"></i></li>Bastien Vermot de Boisrolin - Developer</li>
                             </ul>
                         </div>
                     </div>
