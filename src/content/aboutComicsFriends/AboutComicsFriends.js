@@ -5,6 +5,7 @@ import comicsFriendspic2 from './comicsFriendspic2.png';
 import comicsFriendspic3 from './comicsFriendspic3.png';
 import Anim3D1 from './anim3D/Anim3D1';
 import Anim3D2 from './anim3D/Anim3D2';
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -230,6 +231,41 @@ function AboutComicsFriends(props) {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+
+                <section className='cards'>
+                    <div className='card'>
+                    <div className="icon"><i className="ri-stack-line"></i></div>
+                    <i style={{color:'crimson', fontSize:'2em'}} className='bi bi-stack'></i>
+                    <h2 style={{color:'crimson'}}>Red Card</h2>
+                        <p>Benefits on all upcoming NFT collections by the Comics Friends</p>
+                        <p>Virtual Museum: Right to expose works in upcoming exhibitions.</p>
+                        <p>Access to the CF</p>
+                        <p>Forum: Name within the museum.</p>
+                    </div>
+                    <div className='card'>
+                    <i style={{color:'dodgerblue', fontSize:'2em'}} className='bi bi-stack'></i>
+                    <h2 style={{color:'dodgerblue'}}>Blue</h2>
+                        <p>Benefits on the Moebius NFT Collection.</p>
+                        <p>Right to expose works in upcoming exhibitions.</p>
+                        <p>Access to the CF Forum</p>
+                        <p>Name within the museum.</p>
+                    </div>
+                    <div className='card'>
+                    <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} className='bi bi-stack'></i>
+                    <h2>Yellow</h2>
+                        <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
+                        <p>Benefits on all upcoming NFT collections created by the CF Virtual Museum.</p>
+                        <p>Access to the Comics Friends Forum and Name within the museum.</p>
+                    </div>
+                    <div className='card'>
+                    <i style={{color:'black', fontSize:'2em'}} className='bi bi-stack'></i>
+                    <h2 style={{color:'black'}}>Black</h2>
+                        <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
+                        <p>Airdrop of the Moebius NFT collection</p>
+                        <p>Benefits on all upcoming NFT collections or specific objects created by the CF Virtual Museum.</p>
+                        <p>Access to the Comics Friends Forum and Name within the museum</p>
                     </div>
                 </section>
 
