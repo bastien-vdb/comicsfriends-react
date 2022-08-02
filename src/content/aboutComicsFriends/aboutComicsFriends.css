@@ -13,6 +13,7 @@
     padding: 1.5em;
     font-size: 15px;
     transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 
 .card:hover {
@@ -74,17 +75,11 @@
     text-align: center;
 }
 
-.section3 {
-    padding: 0 1.5em;
-    text-align: center;
-    text-justify:distribute;
-}
-
-.section3 .cardGroup {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 3em;
-    justify-content: space-around;
+.section3 .description {
+    padding-left: 20%;
+    padding-right: 20%; 
+    margin: 0 auto 5em auto;
+    text-align: justify;
 }
 
 .section5 {

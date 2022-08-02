@@ -159,113 +159,52 @@ function AboutComicsFriends(props) {
                     <img style={{width:'50%', margin: 'auto'}} alt="logoYellow comics Friends" src="./logoYellow.png"/>
                 </section>
 
-                <section className='section section3' id='genesis'>
-                    <div >
+                <section className='section3'>
+                    <div className='description'>
                         <h1>Comics Friends’ Genesis NFT collection</h1>
-                        <p>
-                            The Comic friends’ NFT collection will be made of 4 different comics bubbles giving access to  the whole Comics Friends
-                            ecosystem, including access to the Metaverse Museum and the Web 3 forum, as well as benefits on upcoming drops.<br/>
-                            The different levels will be ranked by 4 different colours:
-                            <ul style={{margin:'3em auto'}}>
-                                <li>Red</li>
-                                <li>Blue</li>
-                                <li>Yellow</li>
-                                <li>Black</li>
-                            </ul>
-                            Black being the least common and red being the most common.
-                            Individual cards will have differentiating benefits.
-                        </p>
-                            <div>
-                                <Anim3D1/>
-                            </div>
-                        <p style={{fontSize:'4em', color:'firebrick', margin: "5em auto", textShadow: "0.2em 0.5em 0.1em #600, 0.4em -0.3em 0.1em "}}>Hover the card below</p>
+                            <p>
+                                The Comic friends’ NFT collection will be made of 4 different comics bubbles giving access to  the whole Comics Friends
+                                ecosystem, including access to the Metaverse Museum and the Web 3 forum, as well as benefits on upcoming drops.<br/>
+                                The different levels will be ranked by 4 different colours:
+                            </p>
+                            <p>
+                                Black being the least common and red being the most common.
+                                Individual cards will have differentiating benefits.
+                            </p>
                     </div>
-                    <div className='cardGroup'>
-                        <div data-aos="zoom-out-up" onMouseOver={()=>showCard('red')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid firebrick'}}>RED</span></div>
-                        <div data-aos="zoom-out-up" onMouseOver={()=>showCard('blue')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid dodgerblue'}}>BLUE</span></div>
-                        <div data-aos="zoom-in-down" onMouseOver={()=>showCard('yellow')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid rgb(204, 184, 6)'}}>YELLOW</span></div>
-                        <div data-aos="zoom-in-down" onMouseOver={()=>showCard('black')}><span style={{fontSize:'2em' ,borderBottom:'0.1em solid white'}}>BLACK</span></div>
-                        <div onClick={()=>setRedCardVisible('none')} style={{display: isRedCardVisible, height:'fit-content', width: '30em'}}>
-                            <div className="flip-card-inner">
-                                <div className="flip-card-back">
-                                    <h1>RED</h1>
-                                    <p>Benefits on all upcoming NFT collections or specific objects created by the Comics Friends</p>
-                                    <p>Virtual Museum. - The right to expose works in upcoming exhibitions.</p>
-                                    <p>Access to the Comics Friends Forum - Name within the museum.</p>
-                                </div>
-                            </div>
+                    <div className='cards'>
+                        <div className='card'>
+                        <div className="icon"><i className="ri-stack-line"></i></div>
+                        <i style={{color:'crimson', fontSize:'2em'}} className='bi bi-stack'></i>
+                        <h2 style={{color:'crimson'}}>Red Card</h2>
+                            <p>Benefits on all upcoming NFT collections by the Comics Friends</p>
+                            <p>Virtual Museum: Right to expose works in upcoming exhibitions.</p>
+                            <p>Access to the CF</p>
+                            <p>Forum: Name within the museum.</p>
                         </div>
-                        <div onClick={()=>setBlueCardVisible('none')} style={{display: isBlueCardVisible, height:'fit-content', width: '30em'}}>
-                            <div className="flip-card">
-                                <div className="flip-card-inner">
-                                    <div className="flip-card-back">
-                                        <h1>BLUE</h1>
-                                        <p>Benefits on the Moebius NFT Collection.</p>
-                                        <p>The right to expose works in upcoming exhibitions.</p>
-                                        <p>Access to the Comics Friends Forum</p>
-                                        <p>Name within the museum.</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className='card'>
+                        <i style={{color:'dodgerblue', fontSize:'2em'}} className='bi bi-stack'></i>
+                        <h2 style={{color:'dodgerblue'}}>Blue</h2>
+                            <p>Benefits on the Moebius NFT Collection.</p>
+                            <p>Right to expose works in upcoming exhibitions.</p>
+                            <p>Access to the CF Forum</p>
+                            <p>Name within the museum.</p>
                         </div>
-                        <div onClick={()=>setYellowCardVisible('none')} style={{display: isYellowCardVisible, height:'fit-content', width:'30em'}}>
-                            <div className="flip-card">
-                                <div className="flip-card-back">
-                                    <h1>YELLOW</h1>
-                                    <p>The right to share work to the permanent museum collection and upcoming exhibitions.</p>
-                                    <p>Benefits on all upcoming NFT collections or specific objects created by the Comics Friends Virtual Museum.</p>
-                                    <p>Access to the Comics Friends Forum</p>
-                                    <p>Name within the museum.</p>
-                                </div>
-                            </div>
+                        <div className='card'>
+                        <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} className='bi bi-stack'></i>
+                        <h2>Yellow</h2>
+                            <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
+                            <p>Benefits on all upcoming NFT collections created by the CF Virtual Museum.</p>
+                            <p>Access to the Comics Friends Forum and Name within the museum.</p>
                         </div>
-                        <div onClick={()=>setBlackCardVisible('none')} style={{display: isBlackCardVisible, height:'fit-content', width:'30em'}}>
-                            <div className="flip-card-inner">
-                                <div className="flip-card-back">
-                                    <h1>BLACK</h1>
-                                    <p>The right to share work to the permanent museum collection and upcoming exhibitions.</p>
-                                    <p>Airdrop of the Moebius NFT collection</p>
-                                    <p>Benefits on all upcoming NFT collections or specific objects created by the Comics Friends Virtual Museum.</p>
-                                    <p>Access to the Comics Friends Forum</p>
-                                    <p>Name within the museum.</p>
-                                </div>
-                            </div>
+                        <div className='card'>
+                        <i style={{color:'black', fontSize:'2em'}} className='bi bi-stack'></i>
+                        <h2 style={{color:'black'}}>Black</h2>
+                            <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
+                            <p>Airdrop of the Moebius NFT collection</p>
+                            <p>Benefits on all upcoming NFT collections or specific objects created by the CF Virtual Museum.</p>
+                            <p>Access to the Comics Friends Forum and Name within the museum</p>
                         </div>
-                    </div>
-                </section>
-
-                <section className='cards'>
-                    <div className='card'>
-                    <div className="icon"><i className="ri-stack-line"></i></div>
-                    <i style={{color:'crimson', fontSize:'2em'}} className='bi bi-stack'></i>
-                    <h2 style={{color:'crimson'}}>Red Card</h2>
-                        <p>Benefits on all upcoming NFT collections by the Comics Friends</p>
-                        <p>Virtual Museum: Right to expose works in upcoming exhibitions.</p>
-                        <p>Access to the CF</p>
-                        <p>Forum: Name within the museum.</p>
-                    </div>
-                    <div className='card'>
-                    <i style={{color:'dodgerblue', fontSize:'2em'}} className='bi bi-stack'></i>
-                    <h2 style={{color:'dodgerblue'}}>Blue</h2>
-                        <p>Benefits on the Moebius NFT Collection.</p>
-                        <p>Right to expose works in upcoming exhibitions.</p>
-                        <p>Access to the CF Forum</p>
-                        <p>Name within the museum.</p>
-                    </div>
-                    <div className='card'>
-                    <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} className='bi bi-stack'></i>
-                    <h2>Yellow</h2>
-                        <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
-                        <p>Benefits on all upcoming NFT collections created by the CF Virtual Museum.</p>
-                        <p>Access to the Comics Friends Forum and Name within the museum.</p>
-                    </div>
-                    <div className='card'>
-                    <i style={{color:'black', fontSize:'2em'}} className='bi bi-stack'></i>
-                    <h2 style={{color:'black'}}>Black</h2>
-                        <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
-                        <p>Airdrop of the Moebius NFT collection</p>
-                        <p>Benefits on all upcoming NFT collections or specific objects created by the CF Virtual Museum.</p>
-                        <p>Access to the Comics Friends Forum and Name within the museum</p>
                     </div>
                 </section>
 
