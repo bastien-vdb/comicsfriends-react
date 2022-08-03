@@ -19,7 +19,16 @@ function App() {
       </div>
       <div style={{display:isPanMobileMenuVisible}} className='mobileMenu'>
         <div style={{display:isPanMobileMenuVisible}} onClick={()=>setPanMobileMenuVisible('none')} className='mobileMask'></div>
-        <div style={{display:isPanMobileMenuVisible}} className='menuAppMobile'></div>
+        <div style={{display:isPanMobileMenuVisible}} className='menuAppMobile'>
+        <i class="bi bi-x-lg menuBurgerClose" onClick={()=>setPanMobileMenuVisible('none')}></i>
+          <ul className='menu' onClick={()=>setPanMobileMenuVisible('none')}>
+            <li><a href="#introduction">Outgoing</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#genesis">Genesis</a></li>
+            <li><a href="#partnership">Partnership</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </div>
       </div>
       
       <div className='menuApp'>
@@ -28,7 +37,7 @@ function App() {
         </section>
         <nav>
           <ul className='homeMenuList'>
-            <li><a href="#introduction">First collection</a></li>
+            <li><a href="#introduction">Outgoing</a></li>
             <li><a href="#goals">Goals</a></li>
             <li><a href="#genesis">Genesis</a></li>
             <li><a href="#partnership">Partnership</a></li>

@@ -77,8 +77,9 @@ function AboutComicsFriends(props) {
                             </div>
                         </div>
                     </div>
+                    <div id='goals'></div> {/* Anchorlink: to be sure to arrive at the correct place */}
                 </section>
-                <section style={{overflowX:'hidden'}} className='section section2' id='goals'>
+                <section style={{overflowX:'hidden'}} className='section section2'>
                     <h1>Comics Friends Goals</h1>
                     <img data-aos="zoom-out-down" className='comicsFriendspic3' src={comicsFriendspic3} alt="comicsFriendspic3"/>
                     <div className='line line1'>
@@ -123,6 +124,7 @@ function AboutComicsFriends(props) {
                         </div>
                     </div>
                     <img style={{width:'50%', margin: 'auto'}} alt="logoYellow comics Friends" src="./logoYellow.png"/>
+                    <div id="genesis"></div> {/* Anchorlink: To be sure to arrive at the correct place */}
                 </section>
 
                 <section className='section3'>
@@ -172,9 +174,10 @@ function AboutComicsFriends(props) {
                             <p>Access to the Comics Friends Forum and Name within the museum</p>
                         </div>
                     </div>
+                    <div id="partnership"></div>
                 </section>
 
-                <section style={{overflowX:'hidden'}} className='section section4' id="partnership">
+                <section style={{overflowX:'hidden'}} className='section section4'>
                     <div className='line line1'>
                         <div className='bloc bloc1'>
                             <div>
@@ -202,9 +205,10 @@ function AboutComicsFriends(props) {
                             </div>
                         </div>
                     </div>
+                    <div id='team'></div>
                 </section>
                 <section style={{overflowX:'hidden'}} className='section section5'>
-                    <div className='team' id='team'>
+                    <div className='team'>
                         <h1>The team</h1>
                         <p data-aos="fade-up-left">
                             Introducing the Comics Friends team. The team is made up of a range of individuals with expertise 
