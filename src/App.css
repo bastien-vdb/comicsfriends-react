@@ -107,6 +107,12 @@ section {
   font-size: 25px;
 }
 
+.menuBurger {
+  cursor: pointer;
+  font-size:30px;
+  color:#124265;
+}
+
 .mobileMenu {
   display: none;
 }

@@ -3,8 +3,11 @@ import Account from './Account/Account';
 import 'antd/dist/antd.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+
+  const [isPanMobileMenuVisible, setPanMobileMenuVisible] = useState('none');
 
   return (
     <div>
@@ -12,11 +15,11 @@ function App() {
         <div className='mobileLogo'>
           <span>Comics Friends</span>
         </div>
-        <i style={{fontSize:'30px', color:'#124265'}} class="bi bi-list"></i>
+        <i className="bi bi-list menuBurger" onClick={()=>setPanMobileMenuVisible('block')}></i>
       </div>
-      <div className='mobileMenu'>
-        <div className='mobileMask'></div>
-        <div className='menuAppMobile'></div>
+      <div style={{display:isPanMobileMenuVisible}} className='mobileMenu'>
+        <div style={{display:isPanMobileMenuVisible}} onClick={()=>setPanMobileMenuVisible('none')} className='mobileMask'></div>
+        <div style={{display:isPanMobileMenuVisible}} className='menuAppMobile'></div>
       </div>
       
       <div className='menuApp'>

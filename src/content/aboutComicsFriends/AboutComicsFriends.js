@@ -13,39 +13,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 function AboutComicsFriends(props) {
 
-    const [isCardClicked, setCardClicked] = useState(true);
-    const [isRedCardVisible, setRedCardVisible] = useState('none');
-    const [isBlueCardVisible, setBlueCardVisible] = useState('none');
-    const [isYellowCardVisible, setYellowCardVisible] = useState('none');
-    const [isBlackCardVisible, setBlackCardVisible] = useState('none');
-
-    const showCard = (card) => {
-        if (card === 'red') {
-            setRedCardVisible('block');
-            setBlueCardVisible('none');
-            setYellowCardVisible('none');
-            setBlackCardVisible('none');
-        }
-        if (card === 'blue') {
-            setRedCardVisible('none');
-            setBlueCardVisible('block');
-            setYellowCardVisible('none');
-            setBlackCardVisible('none');
-        }
-        if (card === 'yellow') {
-            setRedCardVisible('none');
-            setBlueCardVisible('none');
-            setYellowCardVisible('block');
-            setBlackCardVisible('none');
-        }
-        if (card === 'black') {
-            setRedCardVisible('none');
-            setBlueCardVisible('none');
-            setYellowCardVisible('none');
-            setBlackCardVisible('block');
-        }
-    }
-
+    /**** AOS Configuration ****/
     useEffect(()=>{
         AOS.init({
             // Global settings:
@@ -67,7 +35,6 @@ function AboutComicsFriends(props) {
             once: false, // whether animation should happen only once - while scrolling down
             mirror: false, // whether elements should animate out while scrolling past them
             anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-          
           });
     },[])
 
@@ -94,19 +61,19 @@ function AboutComicsFriends(props) {
                             <div></div>
                         </div>
                         <div className='bloc bloc2'>
-                                <div>
-                                    <h1>Introduction to Comics Friends</h1>
-                                    <p>
-                                        Welcome to Comics Friends, home to all comic book lovers and admirers.
-                                        Comics Friends is a project built on the shared passion for comic books and the idea of bringing a
-                                        community of comic book lovers together through the use of NFTs.
+                            <div>
+                                <h1>Introduction to Comics Friends</h1>
+                                <p>
+                                    Welcome to Comics Friends, home to all comic book lovers and admirers.
+                                    Comics Friends is a project built on the shared passion for comic books and the idea of bringing a
+                                    community of comic book lovers together through the use of NFTs.
 
-                                        To achieve this vision, Comics Friends will create the first ever virtual comic book artist museum. 
-                                        This museum will showcase the works of many renowned comic book artists from around the world. 
-                                        The Comics Friends platform will also grant users access to a forum, unlocking the doors to a community of artists, 
-                                        art collectors, and connoisseurs. Holders will be able to share their vision, thoughts, and critiques
-                                        about existing and upcoming collections or exhibitions as well as all other Comics Friends-related events.
-                                    </p>
+                                    To achieve this vision, Comics Friends will create the first ever virtual comic book artist museum. 
+                                    This museum will showcase the works of many renowned comic book artists from around the world. 
+                                    The Comics Friends platform will also grant users access to a forum, unlocking the doors to a community of artists, 
+                                    art collectors, and connoisseurs. Holders will be able to share their vision, thoughts, and critiques
+                                    about existing and upcoming collections or exhibitions as well as all other Comics Friends-related events.
+                                </p>
                             </div>
                         </div>
                     </div>
