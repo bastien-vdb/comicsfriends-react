@@ -47,6 +47,10 @@
     height: 80%;
 }
 
+.section1 {
+    background-color: #f8fbfe;
+}
+
 .section2 h1 {
     margin: auto;
 }
@@ -76,7 +80,8 @@
 }
 
 .section3 {
-    background-color: #fffddb88;
+    /* background-color: #fffddb88; */
+    background-color: #f8fbfe;
     padding: 3em 0;
 }
 
@@ -90,7 +95,8 @@
 .section5 {
     padding: 1em;
     height: fit-content;
-    background-color: #fffddb88;
+    /* background-color: #fffddb88; */
+    background-color: #f8fbfe;
 }
 
 .section5 .team .teamList {

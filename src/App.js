@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import AboutComicsFriends from './content/aboutComicsFriends/AboutComicsFriends.js';
 import Account from './Account/Account';
-import { Modal } from 'antd';
 import 'antd/dist/antd.css';
 import './App.css';
 
@@ -11,7 +9,7 @@ function App() {
     <div>
       <div className='menuApp'>
         <section>
-          <img className='logoMenu' src='logoMenu.png' alt=""/>
+          <img className='logoMenu' src='logoMenu.png' alt="Logo menu"/>
         </section>
         <nav>
           <ul className='homeMenuList'>

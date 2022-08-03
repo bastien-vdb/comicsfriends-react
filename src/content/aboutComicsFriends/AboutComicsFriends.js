@@ -74,7 +74,7 @@ function AboutComicsFriends(props) {
     return (
         <div>
             <div>
-                <section className='anim3D1'>
+                <section className='section1 anim3D2'>
                     <div>
                         <Anim3D2/>
                     </div>
