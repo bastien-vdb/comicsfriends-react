@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './aboutComicsFriends.css';
 import comicsFriendspic1 from './comicsFriendspic1.png';
 import comicsFriendspic2 from './comicsFriendspic2.png';

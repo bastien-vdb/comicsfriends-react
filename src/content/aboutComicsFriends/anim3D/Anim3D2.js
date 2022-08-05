@@ -3,8 +3,8 @@ import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { Suspense, useEffect } from "react";
-import { OrbitControls, Stars, Float, ScrollControls, Scroll } from '@react-three/drei';
+import { Suspense } from "react";
+import { OrbitControls, Stars, Float} from '@react-three/drei';
 
 import { Html, useProgress } from '@react-three/drei';
 
@@ -27,20 +27,21 @@ function Anim3D2(props) {
     return (
         <div className='Anim3D2' style={{height:'100vh', backgroundColor:'#124265'}}>
             <Canvas>
-                <Stars radius={50} depth={50} count={10000} factor={4} saturation={0} fade speed={1} />
+              <Suspense fallback={<Loader />}>
+                <Stars radius={50} depth={50} count={3000} factor={4} saturation={0} fade speed={1} />
+                {/* <Image scale={6} url="ComicsFriends_blanc_fondtransparent.png" /> */}
                 <OrbitControls 
                 enableZoom={false} 
                 autoRotate={true}
-                autoRotateSpeed={1}
+                autoRotateSpeed={4}
                  />
                 <ambientLight intensity={0.01}/>
                 <spotLight position={[10,15,10]} angle={0.3} />
                 <Float speed={5} rotationIntensity={1} floatIntensity={10}>
-                  <Suspense fallback={<Loader />}>
-                  </Suspense>
                 </Float>
+              </Suspense>
         </Canvas>
-        <img id='logoCanva' src="ComicsFriends_blanc_fondtransparent.png" alt="ComicsFriends white logo"/>
+        <img id='logoCanva' src="white_comicsfriends_logo-min.png" alt="ComicsFriends white logo"/>
         </div>
     );
 }
