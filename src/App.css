@@ -41,7 +41,7 @@ section {
   height: 5.5em;
   position: fixed;
   background-color: white;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .homeMenuList {
@@ -51,16 +51,16 @@ section {
 }
 
 .homeMenuList li a {
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0.6rem;
   display: block;
-  color:black;
+  color:#124265;
+  transition: all 0.5s;
 }
 
-.homeMenuList li:hover {
-  transition: all 0.5s;
-  border-bottom:1px solid #124265;
+.homeMenuList li a:hover {
+  border-bottom:1px solid black;
+  color:black;
   transform: scale(1.1);
-  color:#124265;
 }
 
 .authentification {
@@ -82,7 +82,7 @@ section {
 }
 
 .content {
-  margin-top: 5.5em;
+  margin-top: 4.8em;
   /* background-color: rgba(238, 238, 238, 0.329); */
 }
 

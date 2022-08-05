@@ -33,7 +33,7 @@ function App() {
       
       <div className='menuApp'>
         <section>
-          <img className='logoMenu' src='logoMenu.png' alt="Logo menu"/>
+          <img style={{width:'100%'}} className='logoMenu' src='blacklogo_comicsfriends_logo-min.png' alt="Logo menu"/>
         </section>
         <nav>
           <ul className='homeMenuList'>

@@ -61,7 +61,7 @@ function Account() {
             padding: "15px",
             fontSize: "17px",
             fontWeight: "500",
-            border: "1px solid rgb(204, 184, 6)",
+            border: "1px solid #124265",
           }}
           style={{ fontSize: "16px", fontWeight: "500" }}
           width="20em"

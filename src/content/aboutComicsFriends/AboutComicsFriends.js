@@ -5,11 +5,8 @@ import comicsFriendspic2 from './comicsFriendspic2.png';
 import comicsFriendspic3 from './comicsFriendspic3.png';
 import Anim3D2 from './anim3D/Anim3D2';
 import "bootstrap-icons/font/bootstrap-icons.css";
-
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-
-
 
 function AboutComicsFriends(props) {
 
@@ -140,7 +137,7 @@ function AboutComicsFriends(props) {
                 <div className='cards'>
                     <div data-aos="flip-left" className='card'>
                         <div className="icon"><i className="ri-stack-line"></i></div>
-                        <i style={{fontSize:'2em'}} className="bi bi-1-circle"></i>
+                        <i style={{fontSize:'2em', color:'#124265'}} className="bi bi-1-circle"></i>
                         <h2>Red Card</h2>
                             <p>Benefits on all upcoming NFT collections by the Comics Friends</p>
                             <p>Virtual Museum: Right to expose works in upcoming exhibitions.</p>
@@ -148,7 +145,7 @@ function AboutComicsFriends(props) {
                             <p>Forum: Name within the museum.</p>
                     </div>
                     <div data-aos="flip-right" className='card'>
-                        <i style={{fontSize:'2em'}} className="bi bi-2-circle"></i>
+                        <i style={{fontSize:'2em', color:'#124265'}} className="bi bi-2-circle"></i>
                         <h2>Blue</h2>
                             <p>Benefits on the Moebius NFT Collection.</p>
                             <p>Right to expose works in upcoming exhibitions.</p>
@@ -156,14 +153,14 @@ function AboutComicsFriends(props) {
                             <p>Name within the museum.</p>
                     </div>
                     <div data-aos="flip-left" className='card'>
-                        <i style={{fontSize:'2em'}} className="bi bi-3-circle"></i>
+                        <i style={{fontSize:'2em', color:'#124265'}} className="bi bi-3-circle"></i>
                         <h2>Yellow</h2>
                             <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
                             <p>Benefits on all upcoming NFT collections created by the CF Virtual Museum.</p>
                             <p>Access to the Comics Friends Forum and Name within the museum.</p>
                     </div>
                     <div data-aos="flip-right" className='card'>
-                        <i style={{fontSize:'2em'}} className="bi bi-4-circle"></i>
+                        <i style={{fontSize:'2em', color:'#124265'}} className="bi bi-4-circle"></i>
                         <h2>Black</h2>
                             <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
                             <p>Airdrop of the Moebius NFT collection</p>
@@ -283,8 +280,88 @@ function AboutComicsFriends(props) {
                     </div>
                 </div>
             </section>
-        </div>
-        
+
+            
+            <section className="faq section6">
+            <div className="container" data-aos="fade-up">
+
+                <div className="section-title">
+                <h1>Frequently Asked Questions</h1>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+                <div className="faq-list">
+                <ul>
+                    <li data-aos="fade-up">
+                        <a><i className="bi bi-question-circle"></i> What is Comics Friends:</a>
+                            <p>
+                                Comics friends is an exclusive community of individuals with a shared passion of comic books, we are comic book lovers, artist and collectors.
+                            </p>
+                    </li>
+
+                    <li data-aos="fade-up" data-aos-delay="100">
+                        <a><i className="bi bi-question-circle"></i> How do I mint my Comics Friends NFT:</a>
+                                <p>
+                                    The Comics Friends card launch date will be announced in september. Once the date is
+                                    announced you can Mint your Card on the website directly or purchase on the secondary
+                                    market post mint (Opensea)
+                                </p>
+                        </li>
+
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <a><i className="bi bi-question-circle"></i> How do I determine my rarity:</a>
+                                <p>
+                                    The rarity ranking will be determined by which colour card you receive and benefits are 
+                                    listed on the official website as well as the Forum. You can also view rarity on Opensea.
+                                </p>
+                        </li>
+
+                    <li data-aos="fade-up" data-aos-delay="300">
+                        <a><i className="bi bi-question-circle"></i> When can I enter the virtual museum ?</a>
+                                <p>
+                                    The virtual museum will be available to all NFT holders and you will be notified 
+                                    prior to the opening upon which you will be able to enter by connecting your wallet.
+                                </p>
+                        </li>
+
+                    <li data-aos="fade-up" data-aos-delay="400">
+                        <a><i className="bi bi-question-circle"></i> If I have a specific question who can I contact ?</a>
+                                <p>
+                                    If you have any specific questions based on your NFT, you can enter the Comics Friends forum
+                                    where other community members or moderators will answer any of your questions. If you have 
+                                    a question unrelated to the NFT or just a general inquiry about the project, you can open 
+                                    a ticket in our discord.
+                                </p>
+                    </li>
+
+                    <li data-aos="fade-up" data-aos-delay="500">
+                        <a><i className="bi bi-question-circle"></i> Are there any additional benefits to owning multiple cards ?</a>
+                                <p>
+                                    Each card has its own benefits and holding multiple cards from the same category will not give a holder 
+                                    additional benefits. However, if you are a holder of two different cards from different categories you 
+                                    will receive the benefits from those two categories.
+                                </p>
+                    </li>
+
+                    <li data-aos="fade-up" data-aos-delay="600">
+                        <a><i className="bi bi-question-circle"></i> Can I pay by credit card ?</a>
+                                <p>
+                                    Yes, you will be able to mint your NFT paying by credit card.
+                                </p>
+                    </li>
+
+                </ul>
+                </div>
+
+            </div>
+            </section>
+            
+            <section className='section7'>
+                <div className='container'>
+                    <a href="https://eternalstar.io">www.eternalstar.io</a>
+                </div>
+            </section>
+        </div>       
     );
 }
 

@@ -13,15 +13,14 @@ function Loader() {
   return <Html center>{progress} % loaded</Html>
 }
 
-
-  function Mesh2() {
-    const epiccomic = useLoader(GLTFLoader, 'epiccomic/scene.gltf');
-    return (
-      <Suspense fallback={null}>
-        <primitive object={epiccomic.scene} position={-0.5} scale={0.025} />
-      </Suspense>
-    )
-  }
+function Mesh2() {
+  const epiccomic = useLoader(GLTFLoader, 'epiccomic/scene.gltf');
+  return (
+    <Suspense fallback={null}>
+      <primitive object={epiccomic.scene} position={-0.5} scale={0.025} />
+    </Suspense>
+  )
+}
 
 function Anim3D2(props) {
     return (
@@ -29,7 +28,6 @@ function Anim3D2(props) {
             <Canvas>
               <Suspense fallback={<Loader />}>
                 <Stars radius={50} depth={50} count={3000} factor={4} saturation={0} fade speed={1} />
-                {/* <Image scale={6} url="ComicsFriends_blanc_fondtransparent.png" /> */}
                 <OrbitControls 
                 enableZoom={false} 
                 autoRotate={true}
