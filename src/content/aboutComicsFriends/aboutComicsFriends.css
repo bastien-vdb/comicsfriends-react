@@ -48,7 +48,53 @@
 }
 
 .section1 {
-    background-color: #f8fbfe;
+    padding: 0;
+}
+
+#logoCanva {
+    width:50%;
+    position:absolute;
+    top:0;
+    margin:0;
+    padding:0;
+    margin-top:30%;
+    margin-left:25%;
+    /*style={{width:'50%', position:'absolute',top:'0', margin:'0', padding:'0', marginTop:'15%', marginLeft:'25%'}}*/
+}
+
+.anim3D2::after {
+        content: "";
+        height: 100vh;
+        position: absolute;
+        bottom: -5.5em;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(180deg,
+            rgba(129, 129, 129, 0) 20%,
+            rgb(218, 218, 218) 100%);
+}
+
+.section1bis::before {
+    content: "";
+    height: 50vh;
+    position: absolute;
+    top: -0;
+    left: 0;
+    width: 100%;
+    /* background: linear-gradient(180deg,
+        rgba(129, 129, 129, 0) 20%,
+        rgb(172, 172, 172) 100%); */
+    background: linear-gradient(180deg, rgb(218, 218, 218),rgba(172, 172, 172, 0));
+}
+
+.section1bis {
+    /* background-color: #f8fbfe; */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('./comics-bg.jpg');
+    background-size: cover;
+    position: relative;
 }
 
 .section2 h1 {
@@ -106,13 +152,30 @@
 .section5 .team .teamList ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     font-size: 15pxs;
 }
 
 .section5 .team .teamList li {
     margin: 0.3em 0;
+}
+
+.section5 .team .teamList .member {
+    height: 14em;
+    width: 16em;
+    box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+    border-radius: 10px;
+    margin: 2%;
+    padding: 1.5em;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.section5 .team .teamList .member:hover{
+    transform: scale(1.3);
 }
 
 /*Mobile view*/

@@ -22,7 +22,7 @@ function App() {
         <div style={{display:isPanMobileMenuVisible}} className='menuAppMobile'>
         <i class="bi bi-x-lg menuBurgerClose" onClick={()=>setPanMobileMenuVisible('none')}></i>
           <ul className='menu' onClick={()=>setPanMobileMenuVisible('none')}>
-            <li><a href="#introduction">Outgoing</a></li>
+            <li><a href="#introduction">About Comics Friends</a></li>
             <li><a href="#goals">Goals</a></li>
             <li><a href="#genesis">Genesis</a></li>
             <li><a href="#partnership">Partnership</a></li>
@@ -37,7 +37,7 @@ function App() {
         </section>
         <nav>
           <ul className='homeMenuList'>
-            <li><a href="#introduction">Outgoing</a></li>
+            <li><a href="#introduction">About Comics Friends</a></li>
             <li><a href="#goals">Goals</a></li>
             <li><a href="#genesis">Genesis</a></li>
             <li><a href="#partnership">Partnership</a></li>

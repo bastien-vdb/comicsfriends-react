@@ -25,22 +25,22 @@ function Loader() {
 
 function Anim3D2(props) {
     return (
-        <div style={{height:'100vh'}}>
+        <div className='Anim3D2' style={{height:'100vh', backgroundColor:'#124265'}}>
             <Canvas>
-                <Stars/>
+                <Stars radius={50} depth={50} count={10000} factor={4} saturation={0} fade speed={1} />
                 <OrbitControls 
                 enableZoom={false} 
                 autoRotate={true}
-                autoRotateSpeed={4}
+                autoRotateSpeed={1}
                  />
-                <ambientLight intensity={6}/>
+                <ambientLight intensity={0.01}/>
                 <spotLight position={[10,15,10]} angle={0.3} />
                 <Float speed={5} rotationIntensity={1} floatIntensity={10}>
                   <Suspense fallback={<Loader />}>
-                    <Mesh2/>
                   </Suspense>
                 </Float>
         </Canvas>
+        <img id='logoCanva' src="ComicsFriends_blanc_fondtransparent.png" alt="ComicsFriends white logo"/>
         </div>
     );
 }
