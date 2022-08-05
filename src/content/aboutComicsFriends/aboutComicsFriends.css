@@ -144,6 +144,16 @@
     background-color: #f8fbfe;
 }
 
+.section5 .team {
+    text-align: center;
+}
+
+.section5 .team p {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
 .section5 .team .teamList {
     margin-top: 2em;
 }

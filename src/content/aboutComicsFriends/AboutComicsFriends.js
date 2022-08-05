@@ -55,12 +55,11 @@ function AboutComicsFriends(props) {
                     <div className='bloc bloc2 space'>
                     </div>
                 </div>
-                <div data-aos="fade-down-left" className='line line2'>
-                    <div className='bloc bloc1 space'>
+                <div className='line line2'>
+                    <div data-aos="fade-down-left" className='bloc bloc1 space'>
                         <div></div>
                     </div>
-                    <div className='bloc bloc2'>
-                        <div>
+                    <div data-aos="fade-down-right" className='bloc bloc2'>
                             <h1>Introduction to Comics Friends</h1>
                             <p>
                                 Welcome to Comics Friends, home to all comic book lovers and admirers.
@@ -73,7 +72,6 @@ function AboutComicsFriends(props) {
                                 art collectors, and connoisseurs. Holders will be able to share their vision, thoughts, and critiques
                                 about existing and upcoming collections or exhibitions as well as all other Comics Friends-related events.
                             </p>
-                        </div>
                     </div>
                 </div>
                 <div id='goals'></div> {/* Anchorlink: to be sure to arrive at the correct place */}
@@ -140,37 +138,37 @@ function AboutComicsFriends(props) {
                         </p>
                 </div>
                 <div className='cards'>
-                    <div className='card'>
-                    <div className="icon"><i className="ri-stack-line"></i></div>
-                    <i style={{fontSize:'2em'}} className="bi bi-1-circle"></i>
-                    <h2>Red Card</h2>
-                        <p>Benefits on all upcoming NFT collections by the Comics Friends</p>
-                        <p>Virtual Museum: Right to expose works in upcoming exhibitions.</p>
-                        <p>Access to the CF</p>
-                        <p>Forum: Name within the museum.</p>
+                    <div data-aos="flip-left" className='card'>
+                        <div className="icon"><i className="ri-stack-line"></i></div>
+                        <i style={{fontSize:'2em'}} className="bi bi-1-circle"></i>
+                        <h2>Red Card</h2>
+                            <p>Benefits on all upcoming NFT collections by the Comics Friends</p>
+                            <p>Virtual Museum: Right to expose works in upcoming exhibitions.</p>
+                            <p>Access to the CF</p>
+                            <p>Forum: Name within the museum.</p>
                     </div>
-                    <div className='card'>
-                    <i style={{fontSize:'2em'}} className="bi bi-2-circle"></i>
-                    <h2>Blue</h2>
-                        <p>Benefits on the Moebius NFT Collection.</p>
-                        <p>Right to expose works in upcoming exhibitions.</p>
-                        <p>Access to the CF Forum</p>
-                        <p>Name within the museum.</p>
+                    <div data-aos="flip-right" className='card'>
+                        <i style={{fontSize:'2em'}} className="bi bi-2-circle"></i>
+                        <h2>Blue</h2>
+                            <p>Benefits on the Moebius NFT Collection.</p>
+                            <p>Right to expose works in upcoming exhibitions.</p>
+                            <p>Access to the CF Forum</p>
+                            <p>Name within the museum.</p>
                     </div>
-                    <div className='card'>
-                    <i style={{fontSize:'2em'}} className="bi bi-3-circle"></i>
-                    <h2>Yellow</h2>
-                        <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
-                        <p>Benefits on all upcoming NFT collections created by the CF Virtual Museum.</p>
-                        <p>Access to the Comics Friends Forum and Name within the museum.</p>
+                    <div data-aos="flip-left" className='card'>
+                        <i style={{fontSize:'2em'}} className="bi bi-3-circle"></i>
+                        <h2>Yellow</h2>
+                            <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
+                            <p>Benefits on all upcoming NFT collections created by the CF Virtual Museum.</p>
+                            <p>Access to the Comics Friends Forum and Name within the museum.</p>
                     </div>
-                    <div className='card'>
-                    <i style={{fontSize:'2em'}} className="bi bi-4-circle"></i>
-                    <h2>Black</h2>
-                        <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
-                        <p>Airdrop of the Moebius NFT collection</p>
-                        <p>Benefits on all upcoming NFT collections or specific objects created by the CF Virtual Museum.</p>
-                        <p>Access to the Comics Friends Forum and Name within the museum</p>
+                    <div data-aos="flip-right" className='card'>
+                        <i style={{fontSize:'2em'}} className="bi bi-4-circle"></i>
+                        <h2>Black</h2>
+                            <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
+                            <p>Airdrop of the Moebius NFT collection</p>
+                            <p>Benefits on all upcoming NFT collections or specific objects created by the CF Virtual Museum.</p>
+                            <p>Access to the Comics Friends Forum and Name within the museum</p>
                     </div>
                 </div>
                 <div id="partnership"></div>
@@ -216,7 +214,7 @@ function AboutComicsFriends(props) {
                     </p>
                     <div className='teamList'>
                         <ul data-aos="zoom-in-out" className='t_level1'>
-                            <div className='member'>
+                            <div data-aos="flip-up" className='member'>
                                 <div className='memberImg'>
                                     <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} class="bi bi-share"></i>
                                 </div>
@@ -225,7 +223,7 @@ function AboutComicsFriends(props) {
                                     <span style={{color:'grey'}}>DG musée</span>
                                 </div>
                             </div>
-                            <div className='member'>
+                            <div data-aos="flip-up" className='member'>
                                 <div className='memberImg'>
                                     <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} class="bi bi-share"></i>
                                 </div>
@@ -234,7 +232,7 @@ function AboutComicsFriends(props) {
                                     <span style={{color:'grey'}}>DG ComicsFriends</span>
                                 </div>
                             </div>
-                            <div className='member'>
+                            <div data-aos="flip-up" className='member'>
                                 <div className='memberImg'>
                                     <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} class="bi bi-share"></i>
                                 </div>
@@ -243,7 +241,7 @@ function AboutComicsFriends(props) {
                                     <span style={{color:'grey'}}>CEO Player One Labs</span>
                                 </div>
                             </div>
-                            <div className='member'>
+                            <div data-aos="flip-up" className='member'>
                                 <div className='memberImg'>
                                     <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} class="bi bi-share"></i>
                                 </div>
@@ -253,7 +251,7 @@ function AboutComicsFriends(props) {
                                 </div>
                             </div>
                         </ul>
-                        <ul data-aos="zoom-in-out" className='t_level2'>
+                        <ul className='t_level2'>
                             <div className='member'>
                                 <div className='memberImg'>
                                     <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} class="bi bi-share"></i>
