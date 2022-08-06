@@ -13,14 +13,14 @@ function App() {
     <div>
       <div className='navBarMobile'>
         <div className='mobileLogo'>
-          <span>Comics Friends</span>
+          <img style={{width:'45%'}} className='logoMenu' src='img_logo_comicsFriends/logoblue comicsfriends_compr.png' alt="Logo menu"/>
         </div>
         <i className="bi bi-list menuBurger" onClick={()=>setPanMobileMenuVisible('block')}></i>
       </div>
       <div style={{display:isPanMobileMenuVisible}} className='mobileMenu'>
         <div style={{display:isPanMobileMenuVisible}} onClick={()=>setPanMobileMenuVisible('none')} className='mobileMask'></div>
         <div style={{display:isPanMobileMenuVisible}} className='menuAppMobile'>
-        <i class="bi bi-x-lg menuBurgerClose" onClick={()=>setPanMobileMenuVisible('none')}></i>
+        <i className="bi bi-x-lg menuBurgerClose" onClick={()=>setPanMobileMenuVisible('none')}></i>
           <ul className='menu' onClick={()=>setPanMobileMenuVisible('none')}>
             <li><a href="#introduction">About Comics Friends</a></li>
             <li><a href="#goals">Goals</a></li>
@@ -33,7 +33,7 @@ function App() {
       
       <div className='menuApp'>
         <section>
-          <img style={{width:'100%'}} className='logoMenu' src='blacklogo_comicsfriends_logo-min.png' alt="Logo menu"/>
+          <img style={{width:'40%'}} className='logoMenu' src='img_logo_comicsFriends/logoblue comicsfriends_compr.png' alt="Logo menu"/>
         </section>
         <nav>
           <ul className='homeMenuList'>

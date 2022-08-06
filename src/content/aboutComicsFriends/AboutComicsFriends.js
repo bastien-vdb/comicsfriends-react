@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import './aboutComicsFriends.css';
-import comicsFriendspic1 from './comicsFriendspic1.png';
-import comicsFriendspic2 from './comicsFriendspic2.png';
-import comicsFriendspic3 from './comicsFriendspic3.png';
 import Anim3D2 from './anim3D/Anim3D2';
+import About from './about/About';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -42,83 +40,84 @@ function AboutComicsFriends(props) {
                     <Anim3D2/>
                 </div>
             </section>
-            <section style={{overflowX:'hidden'}} className='section section1bis' id='introduction'>
-                <div data-aos="fade-up-right" className='line line1'>
-                    <div className='bloc bloc1'>
-                        <div>
-                            <img src={comicsFriendspic1} alt="comicsFriendspic1"/>
-                        </div>
-                    </div>
-                    <div className='bloc bloc2 space'>
-                    </div>
-                </div>
-                <div className='line line2'>
-                    <div data-aos="fade-down-left" className='bloc bloc1 space'>
-                        <div></div>
-                    </div>
-                    <div data-aos="fade-down-right" className='bloc bloc2'>
-                            <h1>Introduction to Comics Friends</h1>
-                            <p>
-                                Welcome to Comics Friends, home to all comic book lovers and admirers.
-                                Comics Friends is a project built on the shared passion for comic books and the idea of bringing a
-                                community of comic book lovers together through the use of NFTs.
-
-                                To achieve this vision, Comics Friends will create the first ever virtual comic book artist museum. 
-                                This museum will showcase the works of many renowned comic book artists from around the world. 
-                                The Comics Friends platform will also grant users access to a forum, unlocking the doors to a community of artists, 
-                                art collectors, and connoisseurs. Holders will be able to share their vision, thoughts, and critiques
-                                about existing and upcoming collections or exhibitions as well as all other Comics Friends-related events.
-                            </p>
-                    </div>
+            <section style={{overflowX:'hidden'}} className='section section1bis'>
+                <div data-aos="fade-down-left" className='aboutComicsFriends'>
+                    <h1>About Comics Friends</h1>
+                    <p style={{lineHeight:'2.2em'}}>
+                        Welcome to Comics Friends, home to all comic book lovers and admirers.
+                        Comics Friends is a project built on the shared passion for comic books and the idea of bringing a
+                        community of comic book lovers together through the use of NFTs.
+                    </p>
+                    <p style={{lineHeight:'2.2em'}}>
+                        To achieve this vision, Comics Friends will create the first ever virtual comic book artist museum. 
+                        This museum will showcase the works of many renowned comic book artists from around the world. 
+                        The Comics Friends platform will also grant users access to a forum, unlocking the doors to a community of artists, 
+                        art collectors, and connoisseurs. Holders will be able to share their vision, thoughts, and critiques
+                        about existing and upcoming collections or exhibitions as well as all other Comics Friends-related events.
+                    </p>
                 </div>
                 <div id='goals'></div> {/* Anchorlink: to be sure to arrive at the correct place */}
             </section>
             <section style={{overflowX:'hidden'}} className='section section2'>
                 <h1>Comics Friends Goals</h1>
-                <img style={{borderRadius:"5px", boxShadow:"10px 10px 10px grey"}} data-aos="zoom-out-down" className='comicsFriendspic3' src={comicsFriendspic3} alt="comicsFriendspic3"/>
+                <img data-aos="zoom-out-down" className='comicsFriendspic3' src="img_logo_comicsFriends/comicsFriendspic3.png" alt="comicsFriendspic3"/>
                 <div className='line line1'>
                     <div style={{boxShadow:"10px 10px 10px grey"}} data-aos="zoom-in" className='bloc bloc1'>
                         <h2>Guiding artists</h2>
                         <p>
                             In the past comic book, artists have often been overlooked in the world of art or they haven’t 
                             been given the due credit that they deserve. Artists have struggled with obtaining rights and 
-                            receiving royalty rates. Comics Friends wants to help artists by giving them back the visibility 
-                            and credit they deserve. At comics Friends, we guide artists whether it be through the creation 
-                            of their own NFT collection or by exposing their work on a large virtual stage. We work very 
-                            closely with artists from the beginning throughout and after the creation of their project, 
+                            receiving royalty rates.
+                        </p> 
+                        <p>Comics Friends wants to help artists by giving them back the visibility 
+                            and credit they deserve. 
+                            At comics Friends, we guide artists whether it be through the creation 
+                            of their own NFT collection or by exposing their work on a large virtual stage.
+                        </p>
+                        <p>
+                            We work very closely with artists from the beginning throughout and after the creation of their project, 
                             to ensure that the artists’ vision and desired outcome are respected at each step of the way.
                         </p>
                     </div>
                     <div style={{boxShadow:"10px 10px 10px grey"}} data-aos="zoom-in" className='bloc bloc2'>
                         <h2>Creating the first-ever virtual comic museum</h2>
                         <p>
-                        Comic book art is often seen as less than in the eyes of many, which is why Comics Friends wants to shed a 
-                        spotlight on all of these incredible artists and their works. Although there are already several comic book 
-                        museums around the world and comic book conferences, there is no place where all comic book lovers and artists
-                        can come together online and display their artwork. To create the first-ever virtual comic book museum for 
-                        collectors and artists is to create a community where collectors can display their work and share it with a
-                        community of like-minded individuals. This is a space where collectors can finally being forward the vast 
-                        diversity of comic book art and share it with the rest of the world. The museum will display different artists 
-                        based on a large selection of themes that will differ throughout the course of the year. These themes will ensure
-                        that not only renown artists are put forth but also allowing for younger emerging artists to receive the recognition
+                            Comic book art is often seen as less than in the eyes of many, which is why Comics Friends wants to shed a 
+                            spotlight on all of these incredible artists and their works. Although there are already several comic book 
+                            museums around the world and comic book conferences, there is no place where all comic book lovers and artists
+                            can come together online and display their artwork.
+                        </p>
+                        <p>
+                            To create the first-ever virtual comic book museum for collectors and artists is to create a community 
+                            where collectors can display their work and share it with a community of like-minded individuals. 
+                            This is a space where collectors can finally being forward the vast diversity of comic book art and share it with the rest of the world.
+                        </p>
+                        <p>
+                            The museum will display different artists based on a large selection of themes that will differ throughout the course of the year. 
+                            These themes will ensure that not only renown artists are put forth but also allowing for younger emerging artists to receive the recognition
                             they deserve.
                         </p>
                     </div>
                     <div style={{boxShadow:"10px 10px 10px grey"}} data-aos="zoom-in" className='bloc bloc3'>
                         <h2>Creating a Web 3-enabled collectors forum</h2>
                         <p>
-                        The Comics Friends forum will act as a communal platform where holders of the CF NFT will be able to 
-                        discuss and share ideas on particular collections and artists, as well as all things related to 
-                        Comics Friends. The forum will be closed and only accessible to holders of the NFT. The key purpose
-                        of the forum is to really act as a place where individuals can challenge the way they think and find
-                        new perspectives or discover new artists that they may not have heard of prior. It should act as a 
-                        positive and educational space where people can exchange freely without judgement, and learn from one
-                        another. A fun space to make new friends.
+                            The Comics Friends forum will act as a communal platform where holders of the CF NFT will be able to 
+                            discuss and share ideas on particular collections and artists, as well as all things related to 
+                            Comics Friends.
+                        </p>
+                        <p>
+                            The forum will be closed and only accessible to holders of the NFT. The key purpose
+                            of the forum is to really act as a place where individuals can challenge the way they think and find
+                            new perspectives or discover new artists that they may not have heard of prior.
+                        </p>
+                        <p>
+                            It should act as a positive and educational space where people can exchange freely without judgement,
+                            and learn from one another. A fun space to make new friends.
                         </p>
                     </div>
                 </div>
-                <img style={{width:'50%', margin: 'auto'}} alt="logoYellow comics Friends" src="./logoYellow.png"/>
                 <div id="genesis"></div> {/* Anchorlink: To be sure to arrive at the correct place */}
+                <img style={{width:'60%', margin: '5em auto 0 auto'}} alt="logoYellow comics Friends" src="./logoYellow.png"/>
             </section>
 
             <section className='section3'>
@@ -138,7 +137,7 @@ function AboutComicsFriends(props) {
                     <div data-aos="flip-left" className='card'>
                         <div className="icon"><i className="ri-stack-line"></i></div>
                         <i style={{fontSize:'2em', color:'#124265'}} className="bi bi-1-circle"></i>
-                        <h2>Red Card</h2>
+                        <h2 style={{color:'#f3152b'}}>Red Card</h2>
                             <p>Benefits on all upcoming NFT collections by the Comics Friends</p>
                             <p>Virtual Museum: Right to expose works in upcoming exhibitions.</p>
                             <p>Access to the CF</p>
@@ -146,7 +145,7 @@ function AboutComicsFriends(props) {
                     </div>
                     <div data-aos="flip-right" className='card'>
                         <i style={{fontSize:'2em', color:'#124265'}} className="bi bi-2-circle"></i>
-                        <h2>Blue</h2>
+                        <h2 style={{color:'#31338d'}}>Blue Card</h2>
                             <p>Benefits on the Moebius NFT Collection.</p>
                             <p>Right to expose works in upcoming exhibitions.</p>
                             <p>Access to the CF Forum</p>
@@ -154,14 +153,14 @@ function AboutComicsFriends(props) {
                     </div>
                     <div data-aos="flip-left" className='card'>
                         <i style={{fontSize:'2em', color:'#124265'}} className="bi bi-3-circle"></i>
-                        <h2>Yellow</h2>
+                        <h2 style={{color:'#fff148'}}>Yellow Card</h2>
                             <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
                             <p>Benefits on all upcoming NFT collections created by the CF Virtual Museum.</p>
                             <p>Access to the Comics Friends Forum and Name within the museum.</p>
                     </div>
                     <div data-aos="flip-right" className='card'>
                         <i style={{fontSize:'2em', color:'#124265'}} className="bi bi-4-circle"></i>
-                        <h2>Black</h2>
+                        <h2 style={{color:'black'}}>Black Card</h2>
                             <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
                             <p>Airdrop of the Moebius NFT collection</p>
                             <p>Benefits on all upcoming NFT collections or specific objects created by the CF Virtual Museum.</p>
@@ -175,7 +174,7 @@ function AboutComicsFriends(props) {
                 <div className='line line1'>
                     <div className='bloc bloc1'>
                         <div>
-                            <img data-aos="fade-left" src={comicsFriendspic2} alt="comicsFriendspic2"/>
+                            <img data-aos="fade-left" src="img_logo_comicsFriends/comicsFriendspic2.png" alt="comicsFriendspic2"/>
                         </div>
                     </div>
                     <div className='bloc bloc2 space'>
@@ -213,7 +212,7 @@ function AboutComicsFriends(props) {
                         <ul data-aos="zoom-in-out" className='t_level1'>
                             <div data-aos="flip-up" className='member'>
                                 <div className='memberImg'>
-                                    <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} class="bi bi-share"></i>
+                                    <img style={{width:'8em'}} src='teampic/ComicsFriends_jaune_fond transparent.png' alt='mini logo jaune'/>
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Arthur Fuchs</h2>
@@ -222,7 +221,7 @@ function AboutComicsFriends(props) {
                             </div>
                             <div data-aos="flip-up" className='member'>
                                 <div className='memberImg'>
-                                    <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} class="bi bi-share"></i>
+                                    <img style={{width:'8em'}} src='teampic/ComicsFriends_lila_fond transparent.png' alt='mini logo lila'/>
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Adrien Fuchs</h2>
@@ -231,7 +230,7 @@ function AboutComicsFriends(props) {
                             </div>
                             <div data-aos="flip-up" className='member'>
                                 <div className='memberImg'>
-                                    <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} class="bi bi-share"></i>
+                                    <img style={{width:'8em'}} src='teampic/ComicsFriends_maron_fond transparent.png' alt='mini logo marron'/>
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Ruben Sananes</h2>
@@ -240,7 +239,7 @@ function AboutComicsFriends(props) {
                             </div>
                             <div data-aos="flip-up" className='member'>
                                 <div className='memberImg'>
-                                    <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} class="bi bi-share"></i>
+                                    <img style={{width:'8em'}} src='teampic/ComicsFriends_orange_fond transparent.png' alt='mini logo orange'/>
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Éric Schahl</h2>
@@ -251,7 +250,7 @@ function AboutComicsFriends(props) {
                         <ul className='t_level2'>
                             <div className='member'>
                                 <div className='memberImg'>
-                                    <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} class="bi bi-share"></i>
+                                    <img style={{width:'8em'}} src='teampic/ComicsFriends_rose_fond transparent.png' alt='mini logo rose'/>
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Alex Vuillaume</h2>
@@ -260,7 +259,7 @@ function AboutComicsFriends(props) {
                             </div>
                             <div className='member'>
                                 <div className='memberImg'>
-                                    <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} class="bi bi-share"></i>
+                                <img style={{width:'8em'}} src='teampic/ComicsFriends_rouge_fond transparent.png' alt='mini logo rouge'/>
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Jennifer Westjohn</h2>
@@ -269,7 +268,7 @@ function AboutComicsFriends(props) {
                             </div>
                             <div className='member'>
                                 <div className='memberImg'>
-                                    <i style={{color:'rgb(204, 184, 6)', fontSize:'2em'}} class="bi bi-share"></i>
+                                    <img style={{width:'8em'}} src='teampic/ComicsFriends_vert_fond transparent.png' alt='mini logo vert'/>
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Bastien Vermot de Boisrolin</h2>
@@ -286,8 +285,8 @@ function AboutComicsFriends(props) {
             <div className="container" data-aos="fade-up">
 
                 <div className="section-title">
-                <h1>Frequently Asked Questions</h1>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <h1>Frequently Asked Questions</h1>
+                    <p>You will find the most popular questions here</p>
                 </div>
 
                 <div className="faq-list">
@@ -355,12 +354,22 @@ function AboutComicsFriends(props) {
 
             </div>
             </section>
+
+            <section className='section7 contact'>
+
+                <div className="contact_titleBloc">
+                    <h1>Contact</h1>
+                    <p>Any question? Contact us right here, right now</p>
+                </div>
+                <About/>
+            </section>
             
-            <section className='section7'>
+            <section className='section8'>
                 <div className='container'>
                     <a href="https://eternalstar.io">www.eternalstar.io</a>
                 </div>
             </section>
+            
         </div>       
     );
 }

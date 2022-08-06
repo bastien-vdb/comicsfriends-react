@@ -1,0 +1,54 @@
+.contact form{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 1em;
+    margin: 2em;
+}
+
+.contact form .contact_bloc1 {
+    width: 100%;
+}
+.contact form .contact_bloc2 {
+    width: 100%;
+}
+
+.aboutInputField{
+    color: black;
+    min-width: 45%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    max-width: 61em;
+}
+
+.contact form textarea{
+    color: black;
+    min-width: 92%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.aboutButton {
+    background-color: #124265;
+    width: fit-content;
+    padding: 8px 20px;
+    border-radius: 4px;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    color: white;
+    margin: 0.5rem;
+}
+
+.aboutButton:hover {
+    transform: scale(1.05);
+}
+
+.titleForm {
+    color:white;
+}

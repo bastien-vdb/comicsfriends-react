@@ -39,7 +39,7 @@ function Anim3D2(props) {
                 </Float>
               </Suspense>
         </Canvas>
-        <img id='logoCanva' src="white_comicsfriends_logo-min.png" alt="ComicsFriends white logo"/>
+        <img id='logoCanva' src="img_logo_comicsFriends/white_comicsfriends_logo-min.png" alt="ComicsFriends white logo"/>
         </div>
     );
 }
