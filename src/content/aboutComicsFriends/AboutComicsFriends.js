@@ -139,7 +139,7 @@ function AboutComicsFriends(props) {
                     <div className='cards'>
                         <div data-aos="flip-left" className='card'>
                             <div className="icon"><i className="ri-stack-line"></i></div>
-                            <i style={{fontSize:'2em', color:'#124265'}} className="bi bi-1-circle"></i>
+                            <i style={{fontSize:'2em', color:'#f3152b'}} className="bi bi-1-circle"></i>
                             <h2 style={{color:'#f3152b'}}>Red Card</h2>
                                 <p>Benefits on all upcoming NFT collections by the Comics Friends</p>
                                 <p>Virtual Museum: Right to expose works in upcoming exhibitions.</p>
@@ -147,7 +147,7 @@ function AboutComicsFriends(props) {
                                 <p>Forum: Name within the museum.</p>
                         </div>
                         <div data-aos="flip-right" className='card'>
-                            <i style={{fontSize:'2em', color:'#124265'}} className="bi bi-2-circle"></i>
+                            <i style={{fontSize:'2em', color:'#31338d'}} className="bi bi-2-circle"></i>
                             <h2 style={{color:'#31338d'}}>Blue Card</h2>
                                 <p>Benefits on the Moebius NFT Collection.</p>
                                 <p>Right to expose works in upcoming exhibitions.</p>
@@ -155,14 +155,14 @@ function AboutComicsFriends(props) {
                                 <p>Name within the museum.</p>
                         </div>
                         <div data-aos="flip-left" className='card'>
-                            <i style={{fontSize:'2em', color:'#124265'}} className="bi bi-3-circle"></i>
+                            <i style={{fontSize:'2em', color:'#fff148'}} className="bi bi-3-circle"></i>
                             <h2 style={{color:'#fff148'}}>Yellow Card</h2>
                                 <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
                                 <p>Benefits on all upcoming NFT collections created by the CF Virtual Museum.</p>
                                 <p>Access to the Comics Friends Forum and Name within the museum.</p>
                         </div>
                         <div data-aos="flip-right" className='card'>
-                            <i style={{fontSize:'2em', color:'#124265'}} className="bi bi-4-circle"></i>
+                            <i style={{fontSize:'2em', color:'black'}} className="bi bi-4-circle"></i>
                             <h2 style={{color:'black'}}>Black Card</h2>
                                 <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
                                 <p>Airdrop of the Moebius NFT collection</p>
@@ -193,10 +193,13 @@ function AboutComicsFriends(props) {
                                 <div data-aos="fade-right">
                                     <h1>Comics Friends’ first partner NFT drop</h1>
                                     <p>
-                                    The first Comics Friends collection will be a collection by world renown artist Moebius. 
-                                    Jean Giraud was a French artist, cartoonist, and writer. He has been described as the most
+                                    The first Comics Friends collection will be a collection by world renown artist <b>Moebius</b>.
+                                    </p> 
+                                    <p><b>Jean Giraud</b> was a French artist, cartoonist, and writer. He has been described as the most
                                         influential *bande dessinée* artist. His most famous works include the series Blueberry,
-                                        Arzach, the Incal and many more.<br/>
+                                        Arzach, the Incal and many more.
+                                    </p>
+                                    <p>
                                     The collection is set to launch towards the end of October. Further information will be 
                                     unveiled within the forum after the release of the Comics Friends membership cards.
                                     </p>
@@ -218,7 +221,7 @@ function AboutComicsFriends(props) {
                         <ul data-aos="zoom-in-out" className='t_level1'>
                             <div data-aos="fade-right" className='member'>
                                 <div className='memberImg'>
-                                    <img style={{width:'8em'}} src='teampic/ComicsFriends_jaune_fond transparent.png' alt='mini logo jaune'/>
+                                    <img style={{width:'8em'}} src='teampic/ComicsFriends_rouge_fond transparent.png' alt='mini logo jaune'/>
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Arthur Fuchs</h2>
@@ -256,7 +259,7 @@ function AboutComicsFriends(props) {
                         <ul className='t_level2'>
                             <div data-aos="fade-left" className='member'>
                                 <div className='memberImg'>
-                                    <img style={{width:'8em'}} src='teampic/ComicsFriends_rose_fond transparent.png' alt='mini logo rose'/>
+                                    <img style={{width:'8em'}} src='teampic/ComicsFriends_jaune_fond transparent.png' alt='mini logo rose'/>
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Alex Vuillaume</h2>
@@ -265,7 +268,7 @@ function AboutComicsFriends(props) {
                             </div>
                             <div data-aos="fade-left" className='member'>
                                 <div className='memberImg'>
-                                <img style={{width:'8em'}} src='teampic/ComicsFriends_rouge_fond transparent.png' alt='mini logo rouge'/>
+                                <img style={{width:'8em'}} src='teampic/ComicsFriends_rose_fond transparent.png' alt='mini logo rouge'/>
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Jennifer Westjohn</h2>
