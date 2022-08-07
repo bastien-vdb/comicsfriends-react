@@ -100,7 +100,7 @@ function AboutComicsFriends(props) {
                             </p>
                         </div>
                         <div style={{boxShadow:"10px 10px 10px grey"}} data-aos="zoom-in" className='bloc bloc3'>
-                            <h2>Creating a Web 3-enabled collectors forum</h2>
+                            <h2>Creating a Web3 enabled collectors forum</h2>
                             <p>
                                 The Comics Friends forum will act as a communal platform where holders of the CF NFT will be able to 
                                 discuss and share ideas on particular collections and artists, as well as all things related to 
