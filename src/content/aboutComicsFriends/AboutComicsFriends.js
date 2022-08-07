@@ -216,7 +216,7 @@ function AboutComicsFriends(props) {
                     </p>
                     <div className='teamList'>
                         <ul data-aos="zoom-in-out" className='t_level1'>
-                            <div data-aos="flip-up" className='member'>
+                            <div data-aos="fade-right" className='member'>
                                 <div className='memberImg'>
                                     <img style={{width:'8em'}} src='teampic/ComicsFriends_jaune_fond transparent.png' alt='mini logo jaune'/>
                                 </div>
@@ -225,7 +225,7 @@ function AboutComicsFriends(props) {
                                     <span style={{color:'grey'}}>DG musée</span>
                                 </div>
                             </div>
-                            <div data-aos="flip-up" className='member'>
+                            <div data-aos="fade-right" className='member'>
                                 <div className='memberImg'>
                                     <img style={{width:'8em'}} src='teampic/ComicsFriends_lila_fond transparent.png' alt='mini logo lila'/>
                                 </div>
@@ -234,7 +234,7 @@ function AboutComicsFriends(props) {
                                     <span style={{color:'grey'}}>DG ComicsFriends</span>
                                 </div>
                             </div>
-                            <div data-aos="flip-up" className='member'>
+                            <div data-aos="fade-right" className='member'>
                                 <div className='memberImg'>
                                     <img style={{width:'8em'}} src='teampic/ComicsFriends_maron_fond transparent.png' alt='mini logo marron'/>
                                 </div>
@@ -243,7 +243,7 @@ function AboutComicsFriends(props) {
                                     <span style={{color:'grey'}}>CEO Player One Labs</span>
                                 </div>
                             </div>
-                            <div data-aos="flip-up" className='member'>
+                            <div data-aos="fade-right" className='member'>
                                 <div className='memberImg'>
                                     <img style={{width:'8em'}} src='teampic/ComicsFriends_orange_fond transparent.png' alt='mini logo orange'/>
                                 </div>
@@ -254,7 +254,7 @@ function AboutComicsFriends(props) {
                             </div>
                         </ul>
                         <ul className='t_level2'>
-                            <div className='member'>
+                            <div data-aos="fade-left" className='member'>
                                 <div className='memberImg'>
                                     <img style={{width:'8em'}} src='teampic/ComicsFriends_rose_fond transparent.png' alt='mini logo rose'/>
                                 </div>
@@ -263,7 +263,7 @@ function AboutComicsFriends(props) {
                                     <span style={{color:'grey'}}>COO Player one labs</span>
                                 </div>
                             </div>
-                            <div className='member'>
+                            <div data-aos="fade-left" className='member'>
                                 <div className='memberImg'>
                                 <img style={{width:'8em'}} src='teampic/ComicsFriends_rouge_fond transparent.png' alt='mini logo rouge'/>
                                 </div>
@@ -272,7 +272,7 @@ function AboutComicsFriends(props) {
                                     <span style={{color:'grey'}}>Artistic Director</span>
                                 </div>
                             </div>
-                            <div className='member'>
+                            <div data-aos="fade-left" className='member'>
                                 <div className='memberImg'>
                                     <img style={{width:'8em'}} src='teampic/ComicsFriends_vert_fond transparent.png' alt='mini logo vert'/>
                                 </div>
@@ -362,7 +362,7 @@ function AboutComicsFriends(props) {
             </section>
 
             <section style={{overflowX:'hidden'}} className='section section7 contact'>
-                <div className='container'>
+                <div data-aos="flip-left" className='container'>
                     <div className="contact_titleBloc">
                         <h1>Contact</h1>
                         <p>Any question? Contact us right here, right now</p>

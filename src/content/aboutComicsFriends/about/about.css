@@ -51,3 +51,9 @@
 .titleForm {
     color:white;
 }
+
+@media (max-width: 700px) {
+    .contact .contact_InsideContainer {
+        flex-wrap: wrap;
+    }
+}
