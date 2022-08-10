@@ -138,32 +138,31 @@ function AboutComicsFriends(props) {
                     </div>
                     <div className='cards'>
                         <div data-aos="zoom-in" className='card'>
-                            <div className="icon"><i className="ri-stack-line"></i></div>
-                            <i style={{fontSize:'2em', color:'#f3152b'}} className="bi bi-1-circle"></i>
-                            <h2 style={{color:'#f3152b'}}>Red Card</h2>
+                            <i style={{fontSize:'2.5em', color:'#f3152b', fontWeight:'bolder'}} className="bi bi-1-circle"></i>
+                            <h2 style={{fontWeight:'bold', color:'#f3152b'}}>Red Card</h2>
                                 <p>Benefits on all upcoming NFT collections by the Comics Friends</p>
                                 <p>Virtual Museum: Right to expose works in upcoming exhibitions.</p>
                                 <p>Access to the CF</p>
                                 <p>Forum: Name within the museum.</p>
                         </div>
                         <div data-aos="zoom-in" className='card'>
-                            <i style={{fontSize:'2em', color:'#31338d'}} className="bi bi-2-circle"></i>
-                            <h2 style={{color:'#31338d'}}>Blue Card</h2>
+                            <i style={{fontSize:'2.5em', color:'#31338d'}} className="bi bi-2-circle"></i>
+                            <h2 style={{fontWeight:'bold', color:'#31338d'}}>Blue Card</h2>
                                 <p>Benefits on the Moebius NFT Collection.</p>
                                 <p>Right to expose works in upcoming exhibitions.</p>
                                 <p>Access to the CF Forum</p>
                                 <p>Name within the museum.</p>
                         </div>
                         <div data-aos="zoom-in" className='card'>
-                            <i style={{fontSize:'2em', color:'#fff148'}} className="bi bi-3-circle"></i>
-                            <h2 style={{color:'#fff148'}}>Yellow Card</h2>
+                            <i style={{fontSize:'2.5em', color:'#fff148'}} className="bi bi-3-circle"></i>
+                            <h2 style={{fontWeight:'bold', color:'#fff148'}}>Yellow Card</h2>
                                 <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
                                 <p>Benefits on all upcoming NFT collections created by the CF Virtual Museum.</p>
                                 <p>Access to the Comics Friends Forum and Name within the museum.</p>
                         </div>
                         <div data-aos="zoom-in" className='card'>
-                            <i style={{fontSize:'2em', color:'black'}} className="bi bi-4-circle"></i>
-                            <h2 style={{color:'black'}}>Black Card</h2>
+                            <i style={{fontSize:'2.5em', color:'black'}} className="bi bi-4-circle"></i>
+                            <h2 style={{fontWeight:'bold', color:'black'}}>Black Card</h2>
                                 <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
                                 <p>Airdrop of the Moebius NFT collection</p>
                                 <p>Benefits on all upcoming NFT collections or specific objects created by the CF Virtual Museum.</p>
