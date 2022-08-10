@@ -137,7 +137,7 @@ function AboutComicsFriends(props) {
                             </p>
                     </div>
                     <div className='cards'>
-                        <div data-aos="flip-left" className='card'>
+                        <div data-aos="zoom-in" className='card'>
                             <div className="icon"><i className="ri-stack-line"></i></div>
                             <i style={{fontSize:'2em', color:'#f3152b'}} className="bi bi-1-circle"></i>
                             <h2 style={{color:'#f3152b'}}>Red Card</h2>
@@ -146,7 +146,7 @@ function AboutComicsFriends(props) {
                                 <p>Access to the CF</p>
                                 <p>Forum: Name within the museum.</p>
                         </div>
-                        <div data-aos="flip-right" className='card'>
+                        <div data-aos="zoom-in" className='card'>
                             <i style={{fontSize:'2em', color:'#31338d'}} className="bi bi-2-circle"></i>
                             <h2 style={{color:'#31338d'}}>Blue Card</h2>
                                 <p>Benefits on the Moebius NFT Collection.</p>
@@ -154,14 +154,14 @@ function AboutComicsFriends(props) {
                                 <p>Access to the CF Forum</p>
                                 <p>Name within the museum.</p>
                         </div>
-                        <div data-aos="flip-left" className='card'>
+                        <div data-aos="zoom-in" className='card'>
                             <i style={{fontSize:'2em', color:'#fff148'}} className="bi bi-3-circle"></i>
                             <h2 style={{color:'#fff148'}}>Yellow Card</h2>
                                 <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
                                 <p>Benefits on all upcoming NFT collections created by the CF Virtual Museum.</p>
                                 <p>Access to the Comics Friends Forum and Name within the museum.</p>
                         </div>
-                        <div data-aos="flip-right" className='card'>
+                        <div data-aos="zoom-in" className='card'>
                             <i style={{fontSize:'2em', color:'black'}} className="bi bi-4-circle"></i>
                             <h2 style={{color:'black'}}>Black Card</h2>
                                 <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
@@ -365,7 +365,7 @@ function AboutComicsFriends(props) {
             </section>
 
             <section style={{overflowX:'hidden'}} className='section section7 contact'>
-                <div data-aos="flip-left" className='container'>
+                <div style={{boxShadow:'0 0 29px 0 rgba(18, 66, 101, 0.08)'}} data-aos="flip-left" className='container'>
                     <div className="contact_titleBloc">
                         <h1>Contact</h1>
                         <p>Any question? Contact us right here, right now</p>

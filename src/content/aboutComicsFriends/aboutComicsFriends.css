@@ -85,6 +85,7 @@ text-align: justify;
     width: 100%;
     position: relative;
     align-items: center;
+    padding: 1.5em;
 }
 
 .section1bis .aboutComicsFriends {
@@ -165,6 +166,11 @@ text-align: justify;
     transform: scale(1.1);
 }
 
+.section4 {
+    padding: 1.5em;
+    font-size: 1.01em;
+}
+
 .section5 {
     padding: 1em;
     height: fit-content;
@@ -242,6 +248,10 @@ text-align: justify;
 .section6 .faq_block .faq-list ul li a {
     color:#124265;
     font-weight: bold;
+}
+
+.section7 {
+    padding: 1.5em;
 }
 
 .section7 .contact_titleBloc {
