@@ -38,22 +38,25 @@ function AboutComicsFriends(props) {
             <section className='section1 anim3D2'>
                 <div>
                     <Anim3D2/>
+                    <div id='introduction'></div>
                 </div>
             </section>
             <section style={{overflowX:'hidden'}} className='section section1bis'>
                 <div data-aos="fade-down-left" className='aboutComicsFriends'>
                     <h1>About Comics Friends</h1>
                     <p style={{lineHeight:'2.2em'}}>
-                        Welcome to Comics Friends, home to all comic book lovers and admirers.
-                        Comics Friends is a project built on the shared passion for comic books and the idea of bringing a
-                        community of comic book lovers together through the use of NFTs.
+                        Welcome to Comics Friends, home to all comic books and artwork lovers and admirers.</p>
+                    <p>
+                        Comics Friends is a project built on the shared passion for comic books and comic artwork
+                        and the idea of bringing this community together using NFTs.
                     </p>
                     <p style={{lineHeight:'2.2em'}}>
-                        To achieve this vision, Comics Friends will create the first ever virtual comic book artist museum. 
-                        This museum will showcase the works of many renowned comic book artists from around the world. 
-                        The Comics Friends platform will also grant users access to a forum, unlocking the doors to a community of artists, 
-                        art collectors, and connoisseurs. Holders will be able to share their vision, thoughts, and critiques
-                        about existing and upcoming collections or exhibitions as well as all other Comics Friends-related events.
+                        To achieve this vision, Comics Friends will create the first ever virtual comic artist museum.
+                        This museum will showcase the work of many renowned comic book artists from around the
+                        world. The Comics Friends platform will also grant users access to a forum, unlocking its
+                        doors to a community of artists, art collectors, and connoisseurs. Holders will be able to share
+                        their vision, thoughts, and critiques about existing and upcoming collections or exhibitions as
+                        well as all other Comics Friends-related events.
                     </p>
                 </div>
                 <div id='goals'></div> {/* Anchorlink: to be sure to arrive at the correct place */}
@@ -76,44 +79,47 @@ function AboutComicsFriends(props) {
                                 of their own NFT collection or by exposing their work on a large virtual stage.
                             </p>
                             <p>
-                                We work very closely with artists from the beginning throughout and after the creation of their project, 
-                                to ensure that the artists’ vision and desired outcome are respected at each step of the way.
+                                We work very closely with artists from the beginning to the end. And throughout their creation, to ensure
+                                that the artists’ vision and desired outcome are respected.
                             </p>
                         </div>
                         <div style={{boxShadow:"10px 10px 10px grey"}} data-aos="zoom-in" className='bloc bloc2'>
                             <h2>Creating the first-ever virtual comic museum</h2>
                             <p>
-                                Comic book art is often seen as less than in the eyes of many, which is why Comics Friends wants to shed a 
-                                spotlight on all of these incredible artists and their works. Although there are already several comic book 
-                                museums around the world and comic book conferences, there is no place where all comic book lovers and artists
-                                can come together online and display their artwork.
+                                Comic book art is often seen as less important than other arts in the eyes of many, which is
+                                why Comics Friends wants to spotlight all these incredible artists and their work. Although
+                                there are already several comic book museums around the world and comic book conferences,
+                                there is no place where all comic book and artwork lovers and artists can come together
+                                online and display their work.
                             </p>
                             <p>
-                                To create the first-ever virtual comic book museum for collectors and artists is to create a community 
-                                where collectors can display their work and share it with a community of like-minded individuals. 
-                                This is a space where collectors can finally being forward the vast diversity of comic book art and share it with the rest of the world.
+                                To put together the first-ever virtual comic book museum for
+                                collectors and artists is to create a community where collectors can display their work and
+                                share it with other like-minded individuals. This is a space where collectors can finally bring
+                                forward the vast diversity of comic book art and share it with the rest of the world.
                             </p>
                             <p>
-                                The museum will display different artists based on a large selection of themes that will differ throughout the course of the year. 
-                                These themes will ensure that not only renown artists are put forth but also allowing for younger emerging artists to receive the recognition
-                                they deserve.
+                                The museum will display different artists based on a large selection of themes that will change
+                                throughout the course of the year. These themes will ensure that not only renown artists are
+                                put forth but also allowing for younger emerging artists to receive the recognition they
+                                deserve.
                             </p>
                         </div>
                         <div style={{boxShadow:"10px 10px 10px grey"}} data-aos="zoom-in" className='bloc bloc3'>
-                            <h2>Creating a Web3 enabled collectors forum</h2>
+                            <h2>Creating a Web3 collectors forum</h2>
                             <p>
-                                The Comics Friends forum will act as a communal platform where holders of the CF NFT will be able to 
-                                discuss and share ideas on particular collections and artists, as well as all things related to 
-                                Comics Friends.
+                                The Comics Friends forum will act as a platform where holders of the CF NFTs will be able
+                                to discuss and share ideas on particular collections, and artists, as well as all Comics Friends
+                                related things.
                             </p>
                             <p>
-                                The forum will be closed and only accessible to holders of the NFT. The key purpose
-                                of the forum is to really act as a place where individuals can challenge the way they think and find
-                                new perspectives or discover new artists that they may not have heard of prior.
+                                The forum will only be accessible to holders of the CF NFTs. The key purpose
+                                of the forum is to act as a space where individuals can challenge the way one thinks and find
+                                new perspectives or discover new artists that they may not have heard of.
                             </p>
                             <p>
-                                It should act as a positive and educational space where people can exchange freely without judgement,
-                                and learn from one another. A fun space to make new friends.
+                                It should act as a positive and educational space where people can exchange freely without judgement and learn
+                                from one another. A fun place to make new friends.
                             </p>
                         </div>
                     </div>
@@ -127,46 +133,53 @@ function AboutComicsFriends(props) {
                     <div className='description'>
                         <h1>Comics Friends’ Genesis NFT collection</h1>
                             <p>
-                                The Comic friends’ NFT collection will be made of 4 different comics bubbles giving access to  the whole Comics Friends
-                                ecosystem, including access to the Metaverse Museum and the Web 3 forum, as well as benefits on upcoming drops.<br/>
-                                The different levels will be ranked by 4 different colours:
+                                The Comic friends’ NFT collection will consist of 4 different comics bubbles giving access to
+                                the whole Comics Friends ecosystem, including access to the Metaverse Museum and the
+                                Web 3 forum, as well as advantages on upcoming drops.
                             </p>
+                            
+                            <p>The different levels will be ranked by 4 different colors:</p>
+
                             <p>
                                 Black being the least common and red being the most common.
-                                Individual cards will have differentiating benefits.
+                                Individual cards will have different advantages.
                             </p>
                     </div>
                     <div className='cards'>
                         <div data-aos="zoom-in" className='card'>
                             <i style={{fontSize:'2.5em', color:'#f3152b', fontWeight:'bolder'}} className="bi bi-1-circle"></i>
                             <h2 style={{fontWeight:'bold', color:'#f3152b'}}>Red Card</h2>
-                                <p>Benefits on all upcoming NFT collections by the Comics Friends</p>
-                                <p>Virtual Museum: Right to expose works in upcoming exhibitions.</p>
-                                <p>Access to the CF</p>
-                                <p>Forum: Name within the museum.</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Advantages on all upcoming NFT collections by the Comics Friends</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Virtual Museum: Right to expose works in upcoming exhibitions</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Access to the CF</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Forum: Name within the museum</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Having your name as a donator on the wall of the museum</p>
                         </div>
                         <div data-aos="zoom-in" className='card'>
                             <i style={{fontSize:'2.5em', color:'#31338d'}} className="bi bi-2-circle"></i>
                             <h2 style={{fontWeight:'bold', color:'#31338d'}}>Blue Card</h2>
-                                <p>Benefits on the Moebius NFT Collection.</p>
-                                <p>Right to expose works in upcoming exhibitions.</p>
-                                <p>Access to the CF Forum</p>
-                                <p>Name within the museum.</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Advantages on the Moebius NFT Collection</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Right to expose works in upcoming exhibitions</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Access to the CF Forum</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Name within the museum</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Having your name as a donator on the wall of the museum</p>
                         </div>
                         <div data-aos="zoom-in" className='card'>
                             <i style={{fontSize:'2.5em', color:'#fff148'}} className="bi bi-3-circle"></i>
                             <h2 style={{fontWeight:'bold', color:'#fff148'}}>Yellow Card</h2>
-                                <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
-                                <p>Benefits on all upcoming NFT collections created by the CF Virtual Museum.</p>
-                                <p>Access to the Comics Friends Forum and Name within the museum.</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>The right to share artwork to the permanent museum collection and upcoming special temporary exhibitions</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Advantages on all upcoming NFT collections created by the CF Virtual Museum</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Access to the Comics Friends Forum and Name within the museum</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Having your name as a donator on the wall of the museum</p>
                         </div>
                         <div data-aos="zoom-in" className='card'>
                             <i style={{fontSize:'2.5em', color:'black'}} className="bi bi-4-circle"></i>
                             <h2 style={{fontWeight:'bold', color:'black'}}>Black Card</h2>
-                                <p>Right to share work to the permanent museum collection and upcoming exhibitions.</p>
-                                <p>Airdrop of the Moebius NFT collection</p>
-                                <p>Benefits on all upcoming NFT collections or specific objects created by the CF Virtual Museum.</p>
-                                <p>Access to the Comics Friends Forum and Name within the museum</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>The right to share artwork to the permanent museum collection and upcoming special temporary exhibitions</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Airdrop of the Moebius NFT collection</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Advantages on all upcoming NFT collections or specific objects created by the CF Virtual Museum.</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Access to the Comics Friends Forum and Name within the museum</p>
+                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Having your name as a donator on the wall of the museum</p>
                         </div>
                     </div>
                     <div id="partnership"></div>
@@ -224,7 +237,7 @@ function AboutComicsFriends(props) {
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Arthur Fuchs</h2>
-                                    <span style={{color:'grey'}}>DG musée</span>
+                                    <span style={{color:'grey'}}>CEO musée</span>
                                 </div>
                             </div>
                             <div data-aos="fade-right" className='member'>
@@ -233,7 +246,7 @@ function AboutComicsFriends(props) {
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Adrien Fuchs</h2>
-                                    <span style={{color:'grey'}}>DG ComicsFriends</span>
+                                    <span style={{color:'grey'}}>CEO ComicsFriends</span>
                                 </div>
                             </div>
                             <div data-aos="fade-right" className='member'>
@@ -251,7 +264,7 @@ function AboutComicsFriends(props) {
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Éric Schahl</h2>
-                                    <span style={{color:'grey'}}>Lawyer</span>
+                                    <span style={{color:'grey'}}>Trademark law advisor</span>
                                 </div>
                             </div>
                         </ul>
@@ -271,7 +284,7 @@ function AboutComicsFriends(props) {
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Jennifer Westjohn</h2>
-                                    <span style={{color:'grey'}}>Artistic Director</span>
+                                    <span style={{color:'grey'}}>AD</span>
                                 </div>
                             </div>
                             <div data-aos="fade-left" className='member'>
@@ -280,7 +293,7 @@ function AboutComicsFriends(props) {
                                 </div>
                                 <div className='memberInfo'>
                                     <h2>Bastien Vermot de Boisrolin</h2>
-                                    <span style={{color:'grey'}}>Developer</span>
+                                    <span style={{color:'grey'}}>CTO</span>
                                 </div>
                             </div>
                         </ul>
@@ -303,7 +316,8 @@ function AboutComicsFriends(props) {
                                 <li data-aos="fade-up">
                                     <a><i className="bi bi-question-circle"></i> What is Comics Friends:</a>
                                     <p>
-                                        Comics friends is an exclusive community of individuals with a shared passion of comic books, we are comic book lovers, artist and collectors.
+                                        Comics friends is an exclusive community of individuals with a shared passion of comic
+                                        books and artworks, we are comic book lovers, artist and collectors.
                                     </p>
                                 </li>
 
@@ -319,8 +333,8 @@ function AboutComicsFriends(props) {
                                 <li data-aos="fade-up" data-aos-delay="200">
                                     <a><i className="bi bi-question-circle"></i> How do I determine my rarity:</a>
                                     <p>
-                                        The rarity ranking will be determined by which colour card you receive and benefits are 
-                                        listed on the official website as well as the Forum. You can also view rarity on Opensea.
+                                    The rarity ranking will be determined by which color card you receive, and advantages are
+                                    listed on the official website as well as the Forum. You can also view rarity on Opensea.
                                     </p>
                                 </li>
 
@@ -343,10 +357,10 @@ function AboutComicsFriends(props) {
                                 </li>
 
                                 <li data-aos="fade-up" data-aos-delay="500">
-                                    <a><i className="bi bi-question-circle"></i> Are there any additional benefits to owning multiple cards ?</a>
+                                    <a><i className="bi bi-question-circle"></i> Are there any additional advantages to owning multiple cards ?</a>
                                     <p>
-                                        Each card has its own benefits and holding multiple cards from the same category will not give a holder 
-                                        additional benefits. However, if you are a holder of two different cards from different categories you 
+                                        Each card has its own advantages and holding multiple cards from the same category will not give a holder 
+                                        additional advantage. However, if you are a holder of two different cards from different categories you 
                                         will receive the benefits from those two categories.
                                     </p>
                                 </li>

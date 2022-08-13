@@ -151,8 +151,8 @@ text-align: justify;
     justify-content: center;
 }
 .section3 .card {
-    height: 30em;
-    width: 22em;
+    height: fit-content;
+    width: 25em;
     box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
     border-radius: 10px;
     margin: 5%;
