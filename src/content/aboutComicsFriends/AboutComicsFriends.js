@@ -41,6 +41,7 @@ function AboutComicsFriends(props) {
                     <div id='introduction'></div>
                 </div>
             </section>
+            
             <section style={{overflowX:'hidden'}} className='section section1bis'>
                 <div data-aos="fade-down-left" className='aboutComicsFriends'>
                     <h1>About Comics Friends</h1>
