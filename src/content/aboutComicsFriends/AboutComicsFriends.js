@@ -6,6 +6,17 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
+//3D Anim
+import { Canvas, useLoader } from '@react-three/fiber';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { Suspense } from "react";
+import { Stars, Float, Html, useProgress, ScrollControls, Scroll, CameraShake, FirstPersonControls } from '@react-three/drei';
+import Museum from './anim3D/Museum';
+import Cadre from './anim3D/Cadre';
+
+import Mesh2 from './anim3D/Anim3D2';
+import Card from './newCard/Cards';
+
 function AboutComicsFriends(props) {
 
     /**** AOS Configuration ****/
@@ -33,12 +44,54 @@ function AboutComicsFriends(props) {
           });
     },[])
 
+    const config = {
+        maxYaw: 0.2, // Max amount camera can yaw in either direction
+        maxPitch: 0.2, // Max amount camera can pitch in either direction
+        maxRoll: 0.1, // Max amount camera can roll in either direction
+        yawFrequency: 0.2, // Frequency of the the yaw rotation
+        pitchFrequency: 0.2, // Frequency of the pitch rotation
+        rollFrequency: 0.1, // Frequency of the roll rotation
+        intensity: 1, // initial intensity of the shake
+        decay: false, // should the intensity decay over time
+        decayRate: 0.65, // if decay = true this is the rate at which intensity will reduce at
+        controls: undefined, // if using orbit controls, pass a ref here so we can update the rotation
+      }
+
+      const config2 = {
+        activeLook: true,
+        autoForward: false,
+        constrainVertical: false,
+        enabled: true,
+        heightCoef: 1,
+        heightMax: 1,
+        heightMin: 0,
+        heightSpeed: false,
+        lookVertical: true,
+        lookSpeed: 0.005,
+        movementSpeed: 1,
+        verticalMax: Math.PI,
+        verticalMin: 0,
+        }
+
     return (
         <div>
-            <section className='section1 anim3D2'>
+            {/* <section className='section1 anim3D2'>
                 <div>
                     <Anim3D2/>
                     <div id='introduction'></div>
+                </div>
+            </section> */}
+            <section>
+                <div className='Anim3Dv3' style={{height:'100vh', backgroundColor:'black'}}>
+                    <Canvas>           
+                        <Stars radius={50} depth={50} count={3000} factor={4} saturation={0} fade speed={1} />         
+                        <ambientLight intensity={1}/>
+                        <spotLight position={[0,4,0]} angle={1} />
+                        <spotLight position={[10,15,10]} angle={0.3} />
+                        <CameraShake {...config} />
+                        <FirstPersonControls {...config2}/>            
+                        <Float speed={5} rotationIntensity={1} floatIntensity={5}></Float>
+                    </Canvas>
                 </div>
             </section>
             
@@ -129,7 +182,11 @@ function AboutComicsFriends(props) {
                 </div>
             </section>
 
-            <section className='section section3'>
+            <section className='cardSection'>
+                <Card/>
+            </section>
+
+            <section style={{overflowX:'hidden'}} className='section section3'>
                 <div className='container'>
                     <div className='description'>
                         <h1>Comics Friends’ Genesis NFT collection</h1>
