@@ -11,11 +11,13 @@ import { Canvas, useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { Suspense } from "react";
 import { Stars, Float, Html, useProgress, ScrollControls, Scroll, CameraShake, FirstPersonControls } from '@react-three/drei';
-import Museum from './anim3D/Museum';
 import Cadre from './anim3D/Cadre';
 
 import Mesh2 from './anim3D/Anim3D2';
 import Card from './newCard/Cards';
+
+import Anim3D4 from './anim3D/Anim3D4';
+import Blocks from '../blocks/Blocks';
 
 function AboutComicsFriends(props) {
 
@@ -75,13 +77,7 @@ function AboutComicsFriends(props) {
 
     return (
         <div>
-            {/* <section className='section1 anim3D2'>
-                <div>
-                    <Anim3D2/>
-                    <div id='introduction'></div>
-                </div>
-            </section> */}
-            <section>
+            {/* <section>
                 <div className='Anim3Dv3' style={{height:'100vh', backgroundColor:'black'}}>
                     <Canvas>           
                         <Stars radius={50} depth={50} count={3000} factor={4} saturation={0} fade speed={1} />         
@@ -89,11 +85,15 @@ function AboutComicsFriends(props) {
                         <spotLight position={[0,4,0]} angle={1} />
                         <spotLight position={[10,15,10]} angle={0.3} />
                         <CameraShake {...config} />
+                        
                         <FirstPersonControls {...config2}/>            
                         <Float speed={5} rotationIntensity={1} floatIntensity={5}></Float>
                     </Canvas>
                 </div>
-            </section>
+                <div id='introduction'></div>
+            </section> */}
+
+            
             
             <section style={{overflowX:'hidden'}} className='section section1bis'>
                 <div data-aos="fade-down-left" className='aboutComicsFriends'>
@@ -115,133 +115,22 @@ function AboutComicsFriends(props) {
                 </div>
                 <div id='goals'></div> {/* Anchorlink: to be sure to arrive at the correct place */}
             </section>
-            <section style={{overflowX:'hidden'}} className='section section2'>
-                <div className='container'>
-                    <h1>Comics Friends Goals</h1>
-                    <img data-aos="zoom-out-down" className='comicsFriendspic3' src="img_logo_comicsFriends/comicsFriendspic3.png" alt="comicsFriendspic3"/>
-                    <div className='line line1'>
-                        <div style={{boxShadow:"10px 10px 10px grey"}} data-aos="zoom-in" className='bloc bloc1'>
-                            <h2>Guiding artists</h2>
-                            <p>
-                                In the past comic book, artists have often been overlooked in the world of art or they haven’t 
-                                been given the due credit that they deserve. Artists have struggled with obtaining rights and 
-                                receiving royalty rates.
-                            </p> 
-                            <p>Comics Friends wants to help artists by giving them back the visibility 
-                                and credit they deserve. 
-                                At comics Friends, we guide artists whether it be through the creation 
-                                of their own NFT collection or by exposing their work on a large virtual stage.
-                            </p>
-                            <p>
-                                We work very closely with artists from the beginning to the end. And throughout their creation, to ensure
-                                that the artists’ vision and desired outcome are respected.
-                            </p>
-                        </div>
-                        <div style={{boxShadow:"10px 10px 10px grey"}} data-aos="zoom-in" className='bloc bloc2'>
-                            <h2>Creating the first-ever virtual comic museum</h2>
-                            <p>
-                                Comic book art is often seen as less important than other arts in the eyes of many, which is
-                                why Comics Friends wants to spotlight all these incredible artists and their work. Although
-                                there are already several comic book museums around the world and comic book conferences,
-                                there is no place where all comic book and artwork lovers and artists can come together
-                                online and display their work.
-                            </p>
-                            <p>
-                                To put together the first-ever virtual comic book museum for
-                                collectors and artists is to create a community where collectors can display their work and
-                                share it with other like-minded individuals. This is a space where collectors can finally bring
-                                forward the vast diversity of comic book art and share it with the rest of the world.
-                            </p>
-                            <p>
-                                The museum will display different artists based on a large selection of themes that will change
-                                throughout the course of the year. These themes will ensure that not only renown artists are
-                                put forth but also allowing for younger emerging artists to receive the recognition they
-                                deserve.
-                            </p>
-                        </div>
-                        <div style={{boxShadow:"10px 10px 10px grey"}} data-aos="zoom-in" className='bloc bloc3'>
-                            <h2>Creating a Web3 collectors forum</h2>
-                            <p>
-                                The Comics Friends forum will act as a platform where holders of the CF NFTs will be able
-                                to discuss and share ideas on particular collections, and artists, as well as all Comics Friends
-                                related things.
-                            </p>
-                            <p>
-                                The forum will only be accessible to holders of the CF NFTs. The key purpose
-                                of the forum is to act as a space where individuals can challenge the way one thinks and find
-                                new perspectives or discover new artists that they may not have heard of.
-                            </p>
-                            <p>
-                                It should act as a positive and educational space where people can exchange freely without judgement and learn
-                                from one another. A fun place to make new friends.
-                            </p>
-                        </div>
-                    </div>
-                    <div id="genesis"></div> {/* Anchorlink: To be sure to arrive at the correct place */}
-                    <img style={{width:'60%', margin: '5em auto 0 auto'}} alt="logoYellow comics Friends" src="./logoYellow.png"/>
+            
+            <section>
+                <Blocks/>
+            </section>
+            
+
+            <section>
+                <div>
+                    {/* *********** */}
+                    <Anim3D4/>
                 </div>
             </section>
 
             <section className='cardSection'>
                 <Card/>
-            </section>
-
-            <section style={{overflowX:'hidden'}} className='section section3'>
-                <div className='container'>
-                    <div className='description'>
-                        <h1>Comics Friends’ Genesis NFT collection</h1>
-                            <p>
-                                The Comic friends’ NFT collection will consist of 4 different comics bubbles giving access to
-                                the whole Comics Friends ecosystem, including access to the Metaverse Museum and the
-                                Web 3 forum, as well as advantages on upcoming drops.
-                            </p>
-                            
-                            <p>The different levels will be ranked by 4 different colors:</p>
-
-                            <p>
-                                Black being the least common and red being the most common.
-                                Individual cards will have different advantages.
-                            </p>
-                    </div>
-                    <div className='cards'>
-                        <div data-aos="zoom-in" className='card'>
-                            <i style={{fontSize:'2.5em', color:'#f3152b', fontWeight:'bolder'}} className="bi bi-1-circle"></i>
-                            <h2 style={{fontWeight:'bold', color:'#f3152b'}}>Red Card</h2>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Advantages on all upcoming NFT collections by the Comics Friends</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Virtual Museum: Right to expose works in upcoming exhibitions</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Access to the CF</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Forum: Name within the museum</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Having your name as a donator on the wall of the museum</p>
-                        </div>
-                        <div data-aos="zoom-in" className='card'>
-                            <i style={{fontSize:'2.5em', color:'#31338d'}} className="bi bi-2-circle"></i>
-                            <h2 style={{fontWeight:'bold', color:'#31338d'}}>Blue Card</h2>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Advantages on the Moebius NFT Collection</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Right to expose works in upcoming exhibitions</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Access to the CF Forum</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Name within the museum</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Having your name as a donator on the wall of the museum</p>
-                        </div>
-                        <div data-aos="zoom-in" className='card'>
-                            <i style={{fontSize:'2.5em', color:'#fff148'}} className="bi bi-3-circle"></i>
-                            <h2 style={{fontWeight:'bold', color:'#fff148'}}>Yellow Card</h2>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>The right to share artwork to the permanent museum collection and upcoming special temporary exhibitions</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Advantages on all upcoming NFT collections created by the CF Virtual Museum</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Access to the Comics Friends Forum and Name within the museum</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Having your name as a donator on the wall of the museum</p>
-                        </div>
-                        <div data-aos="zoom-in" className='card'>
-                            <i style={{fontSize:'2.5em', color:'black'}} className="bi bi-4-circle"></i>
-                            <h2 style={{fontWeight:'bold', color:'black'}}>Black Card</h2>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>The right to share artwork to the permanent museum collection and upcoming special temporary exhibitions</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Airdrop of the Moebius NFT collection</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Advantages on all upcoming NFT collections or specific objects created by the CF Virtual Museum.</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Access to the Comics Friends Forum and Name within the museum</p>
-                                <p><i style={{fontSize:'1.5em', color:'#124265'}} class="bi bi-check-all"> </i>Having your name as a donator on the wall of the museum</p>
-                        </div>
-                    </div>
-                    <div id="partnership"></div>
-                </div>
+                <div id="partnership"></div>
             </section>
 
             <section style={{overflowX:'hidden'}} className='section section4'>
