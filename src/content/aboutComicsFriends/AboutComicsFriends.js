@@ -76,24 +76,7 @@ function AboutComicsFriends(props) {
         }
 
     return (
-        <div>
-            {/* <section>
-                <div className='Anim3Dv3' style={{height:'100vh', backgroundColor:'black'}}>
-                    <Canvas>           
-                        <Stars radius={50} depth={50} count={3000} factor={4} saturation={0} fade speed={1} />         
-                        <ambientLight intensity={1}/>
-                        <spotLight position={[0,4,0]} angle={1} />
-                        <spotLight position={[10,15,10]} angle={0.3} />
-                        <CameraShake {...config} />
-                        
-                        <FirstPersonControls {...config2}/>            
-                        <Float speed={5} rotationIntensity={1} floatIntensity={5}></Float>
-                    </Canvas>
-                </div>
-                <div id='introduction'></div>
-            </section> */}
-
-            
+        <div>       
             
             <section style={{overflowX:'hidden'}} className='section section1bis'>
                 <div data-aos="fade-down-left" className='aboutComicsFriends'>
@@ -325,7 +308,7 @@ function AboutComicsFriends(props) {
             </section>
 
             <section style={{overflowX:'hidden'}} className='section section7 contact'>
-                <div style={{boxShadow:'0 0 29px 0 rgba(18, 66, 101, 0.08)'}} data-aos="flip-left" className='container'>
+                <div data-aos="fade-up" className='container'>
                     <div className="contact_titleBloc">
                         <h1>Contact</h1>
                         <p>Any question? Contact us right here, right now</p>

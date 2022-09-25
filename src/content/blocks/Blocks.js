@@ -3,10 +3,10 @@ import './blocks.css';
 export default function Blocks () {
   
   return (
-    <div style={{backgroundAttachment: 'fixed', overflowX:'hidden'}} className='cardComponent_blocks'>
+    <div style={{backgroundAttachment: 'fixed', overflowX:'hidden'}}>
       <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
           {/* <!--Card 1--> */}
-          <div class="rounded overflow-hidden shadow-lg rotate-6">
+          <div class="rounded overflow-hidden shadow-lg rotate-3">
             <img class="w-full" src="logoYellow.png" alt="Mountain"/>
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Guiding artists</div>
@@ -34,7 +34,7 @@ export default function Blocks () {
             </div>
           </div>
           {/* <!--Card 2--> */}
-          <div class="rounded overflow-hidden shadow-lg rotate-[-6deg]">
+          <div class="rounded overflow-hidden shadow-lg rotate-[-3deg]">
             <img class="w-full" src="/img_logo_comicsFriends/comicsFriendspic3.png" alt="River"/>
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Creating the first-ever virtual comic museum</div>
@@ -68,7 +68,7 @@ export default function Blocks () {
           </div>
 
           {/* <!--Card 3--> */}
-          <div class="rounded overflow-hidden shadow-lg rotate-6">
+          <div class="rounded overflow-hidden shadow-lg rotate-3">
             <img class="w-full" src="/img_logo_comicsFriends/comicsFriendspic2.png" alt="Forest"/>
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Creating a Web3 collectors forum</div>

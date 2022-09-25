@@ -2,8 +2,7 @@ import './cards.css';
 
 export default function Card () {return (
 
-<div
-style={{backgroundAttachment: 'fixed'}} className='cardComponent'
+<div className='cardComponent'
 >
   <h1 className='pt-8 pl-10 pr-10 md:pl-48 md:pr-48 lg:pl-72 lg:pr-72 mb-20'>Comics Friends’ Genesis NFT collection</h1>
   <p className='pl-10 pr-10 md:pl-48 md:pr-48 lg:pl-72 lg:pr-72 mb-20'>The Comic friends’ NFT collection will consist of 4 different comics bubbles giving access to the whole Comics Friends ecosystem, including access to the Metaverse Museum and the Web 3 forum, as well as advantages on upcoming drops.

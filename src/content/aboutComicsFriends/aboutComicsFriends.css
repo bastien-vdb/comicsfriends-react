@@ -6,6 +6,11 @@ p {
 text-align: justify;
 }
 
+body {
+    background-image: url('./floating-cogs.svg');
+    background-attachment: fixed;
+}
+
 .section {
     display: block;
     min-height: 80vh;
@@ -82,15 +87,16 @@ text-align: justify;
 }
 
 .section1bis {
-    background-color: #f8fbfe;
     width: 100%;
     position: relative;
     align-items: center;
     padding: 1.5em;
+    /* background-image: url('floating-cogs.svg'); */
+    /*  background-attachment: fixed; */
 }
 
 .section1bis .aboutComicsFriends {
-    max-width: 1080px;
+   padding: 20px;
 }
 
 .section1bis .aboutComicsFriends h1 {

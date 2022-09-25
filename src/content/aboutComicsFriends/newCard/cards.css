@@ -1,6 +1,6 @@
 .cardComponent {
-  background-color: #a9c9ff;
-  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+  /* background-color: #a9c9ff; */
+  /* background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%); */
   font-family: "Righteous", cursive;
   min-height: 100vh;
 }
@@ -47,25 +47,6 @@
           box-sizing: border-box;
           padding: 20px;
         }
-        
-
-          .java {
-            background-color: #fffc00;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-
-          .python {
-            background-color: #00fffc;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-
-          .cSharp {
-            background-color: #fc00ff;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
         
 
         .face2 {
