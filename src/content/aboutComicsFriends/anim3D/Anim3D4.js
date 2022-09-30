@@ -9,19 +9,13 @@ export default function Anim3D4() {
 
     useEffect(()=>{
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0xffffff);
+        // scene.background = new THREE.Color(0xffffff,0);
         const camera = new  THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-        const renderer = new THREE.WebGLRenderer({antialias:true});
+        const renderer = new THREE.WebGLRenderer({antialias:true, alpha:true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         canvas.current.appendChild(renderer.domElement);
-
-        const geometry = new THREE.BoxGeometry(1,1,1);
-        const material = new THREE.MeshBasicMaterial();
-        const mesh = new THREE.Mesh(geometry, material);
         camera.position.z = 4;
-
-        let scrollY = window.scrollY;
         
         const loader = new GLTFLoader();
 
@@ -30,48 +24,24 @@ export default function Anim3D4() {
             gltf.scene.position.x = 0;
             gltf.scene.rotation.y = -0.74;
             scene.add( gltf.scene );
-            
-            let switchLeft = false;
 
             const canvasSize = canvas.current.offsetHeight;
-            console.log(canvasSize);
 
-            let scrollUpOrDown = window.scrollY;
+            // linear interpolation function
+            function lerp(a, b, t) {
+                return ((1 - t) * a + t * b);
+            }
+
             window.addEventListener('scroll', ()=>{
-                console.log(canvas.current.getBoundingClientRect().top);
                 if (canvas.current.getBoundingClientRect().top < canvasSize/2 && canvas.current.getBoundingClientRect().top > -canvasSize/2) {
-                    if (window.scrollY > scrollUpOrDown) {
-                        gltf.scene.rotation.y += window.scrollY/400000;
-                        camera.position.z-= window.scrollY/50000;
-                        scrollUpOrDown = window.scrollY;
-                    }
-                    else {
-                        gltf.scene.rotation.y -= window.scrollY/400000;
-                        camera.position.z+= window.scrollY/50000;
-                        scrollUpOrDown = window.scrollY;
-                    }
+                    let clientRect = (canvasSize/2)-canvas.current.getBoundingClientRect().top;
+                    let ratio = clientRect/canvasSize;
+
+                    camera.position.z = lerp(4, 2, ratio);
+                    gltf.scene.rotation.y = lerp(-0.74,0.74,ratio);
+                    gltf.scene.position.y = lerp(-2,-3,ratio);
                 }
-
             })
-
-            // if (switchLeft) {
-            //     if (gltf.scene.rotation.y < 0.75) {
-            //         gltf.scene.rotation.y += window.scrollY/400000;
-            //         camera.position.z-= window.scrollY/50000;
-            //     }
-            //     else {
-            //         switchLeft = false;
-            //     }
-            // }
-            // else {
-            //     if (gltf.scene.rotation.y > -0.75) {
-            //         gltf.scene.rotation.y -= window.scrollY/400000;
-            //         camera.position.z+= window.scrollY/50000;
-            //     }
-            //     else {
-            //         switchLeft = true;
-            //     }
-            // }
             
 
         }, undefined, function ( error ) {
@@ -89,7 +59,7 @@ export default function Anim3D4() {
     },[])
 
     return (
-        <div ref={canvas}>
+        <div style={{width:'100%'}} ref={canvas}>
 
         </div>
     )

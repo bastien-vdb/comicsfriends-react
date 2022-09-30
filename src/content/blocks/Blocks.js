@@ -4,13 +4,13 @@ export default function Blocks () {
   
   return (
     <div style={{backgroundAttachment: 'fixed', overflowX:'hidden'}}>
-      <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+      <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
           {/* <!--Card 1--> */}
-          <div class="rounded overflow-hidden shadow-lg rotate-3">
-            <img class="w-full" src="logoYellow.png" alt="Mountain"/>
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Guiding artists</div>
-              <p class="text-gray-700 text-base">
+          <div className="rounded overflow-hidden shadow-lg rotate-3">
+            <img className="w-full" src="logoYellow.png" alt="Mountain"/>
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2">Guiding artists</div>
+              <div className="text-gray-700 text-base">
               <p>
                                 In the past comic book, artists have often been overlooked in the world of art or they haven’t 
                                 been given the due credit that they deserve. Artists have struggled with obtaining rights and 
@@ -25,21 +25,21 @@ export default function Blocks () {
                                 We work very closely with artists from the beginning to the end. And throughout their creation, to ensure
                                 that the artists’ vision and desired outcome are respected.
                             </p>
-              </p>
+              </div>
             </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
             </div>
           </div>
           {/* <!--Card 2--> */}
-          <div class="rounded overflow-hidden shadow-lg rotate-[-3deg]">
-            <img class="w-full" src="/img_logo_comicsFriends/comicsFriendspic3.png" alt="River"/>
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Creating the first-ever virtual comic museum</div>
-              <p class="text-gray-700 text-base">
-              <p>
+          <div className="rounded overflow-hidden shadow-lg rotate-[-3deg]">
+            <img className="w-full" src="/img_logo_comicsFriends/comicsFriendspic3.png" alt="River"/>
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2">Creating the first-ever virtual comic museum</div>
+              <div className="text-gray-700 text-base">
+                            <p>
                                 Comic book art is often seen as less important than other arts in the eyes of many, which is
                                 why Comics Friends wants to spotlight all these incredible artists and their work. Although
                                 there are already several comic book museums around the world and comic book conferences,
@@ -58,21 +58,21 @@ export default function Blocks () {
                                 put forth but also allowing for younger emerging artists to receive the recognition they
                                 deserve.
                             </p>
-              </p>
+              </div>
             </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#summer</span>
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#summer</span>
             </div>
           </div>
 
           {/* <!--Card 3--> */}
-          <div class="rounded overflow-hidden shadow-lg rotate-3">
-            <img class="w-full" src="/img_logo_comicsFriends/comicsFriendspic2.png" alt="Forest"/>
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Creating a Web3 collectors forum</div>
-              <p class="text-gray-700 text-base">
+          <div className="rounded overflow-hidden shadow-lg rotate-3">
+            <img className="w-full" src="/img_logo_comicsFriends/comicsFriendspic2.png" alt="Forest"/>
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2">Creating a Web3 collectors forum</div>
+              <div className="text-gray-700 text-base">
                 <p>
                     The Comics Friends forum will act as a platform where holders of the CF NFTs will be able
                     to discuss and share ideas on particular collections, and artists, as well as all Comics Friends
@@ -87,12 +87,12 @@ export default function Blocks () {
                     It should act as a positive and educational space where people can exchange freely without judgement and learn
                     from one another. A fun place to make new friends.
                 </p>
-                </p>
+              </div>
             </div>
-            <div class="px-6 pt-4 pb-2">
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#fall</span>
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#fall</span>
             </div>
           </div>
         </div>

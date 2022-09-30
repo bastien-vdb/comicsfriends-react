@@ -73,31 +73,25 @@ body {
             rgb(218, 218, 218) 100%);
 } */
 
-.section1bis::before {
+/* .section1bis::before {
     content: "";
     height: 20vh;
     position: absolute;
     top: -0;
     left: 0;
     width: 100%;
-    /* background: linear-gradient(180deg,
-        rgba(129, 129, 129, 0) 20%,
-        rgb(172, 172, 172) 100%); */
-    background: linear-gradient(180deg, rgb(218, 218, 218),rgba(172, 172, 172, 0));
-}
+} */
 
 .section1bis {
     width: 100%;
     position: relative;
     align-items: center;
     padding: 1.5em;
-    /* background-image: url('floating-cogs.svg'); */
-    /*  background-attachment: fixed; */
 }
 
-.section1bis .aboutComicsFriends {
+/* .section1bis .aboutComicsFriends {
    padding: 20px;
-}
+} */
 
 .section1bis .aboutComicsFriends h1 {
     margin: 5em auto  2em auto;
@@ -265,6 +259,11 @@ body {
     width: fit-content;
     margin: 1em auto;
     text-align: center;
+}
+
+.memberImg {
+    display: flex;
+    justify-content: center;
 }
 
 .section8 {

@@ -1,23 +1,17 @@
 import React, { useEffect } from 'react';
 import './aboutComicsFriends.css';
-import Anim3D2 from './anim3D/Anim3D2';
 import About from './about/About';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
-//3D Anim
-import { Canvas, useLoader } from '@react-three/fiber';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { Suspense } from "react";
-import { Stars, Float, Html, useProgress, ScrollControls, Scroll, CameraShake, FirstPersonControls } from '@react-three/drei';
-import Cadre from './anim3D/Cadre';
-
-import Mesh2 from './anim3D/Anim3D2';
 import Card from './newCard/Cards';
 
 import Anim3D4 from './anim3D/Anim3D4';
-import Blocks from '../blocks/Blocks';
+import Blocks from '../blocks2/Blocks';
+import Partnership from './Partnership';
+import Anim3D_white_gal from './anim3D/Anim3D_white_gal';
+
 
 function AboutComicsFriends(props) {
 
@@ -76,12 +70,20 @@ function AboutComicsFriends(props) {
         }
 
     return (
-        <div>       
+        <div style={{overscrollBehavior:'none'}}>
             
-            <section style={{overflowX:'hidden'}} className='section section1bis'>
-                <div data-aos="fade-down-left" className='aboutComicsFriends'>
+            <section>
+                <Anim3D_white_gal/> 
+            </section>
+
+            <section style={{marginTop:'25em'}}>
+                <h1 style={{fontSize:'5em', backgroundColor:'white'}}>COMIC FRIENDS MUSEUM</h1>
+            </section>
+            
+            <section style={{overflowX:'hidden', marginTop:'10em'}} className='section section1bis'>
+                <div data-aos="fade-down-left" className='aboutComicsFriends' style={{fontWeight:'bold', fontSize:'1em'}}>
                     <h1>About Comics Friends</h1>
-                    <p style={{lineHeight:'2.2em'}}>
+                    <p style={{lineHeight:'2.2em'   }}>
                         Welcome to Comics Friends, home to all comic books and artwork lovers and admirers.</p>
                     <p>
                         Comics Friends is a project built on the shared passion for comic books and comic artwork
@@ -106,56 +108,25 @@ function AboutComicsFriends(props) {
 
             <section>
                 <div>
-                    {/* *********** */}
                     <Anim3D4/>
                 </div>
             </section>
 
-            <section className='cardSection'>
+            <section style={{width:'100%'}} className='panel cardSection'>
                 <Card/>
                 <div id="partnership"></div>
             </section>
 
-            <section style={{overflowX:'hidden'}} className='section section4'>
-                <div className='container'>
-                    <div className='line line1'>
-                        <div className='bloc bloc1'>
-                            <div>
-                                <img data-aos="fade-left" src="img_logo_comicsFriends/comicsFriendspic2.png" alt="comicsFriendspic2"/>
-                            </div>
-                        </div>
-                        <div className='bloc bloc2 space'>
-                        </div>
-                    </div>
-                    <div className='line line2'>
-                        <div className='bloc bloc1 space'>
-                            <div></div>
-                        </div>
-                        <div className='bloc bloc2'>
-                                <div data-aos="fade-right">
-                                    <h1>Comics Friends’ first partner NFT drop</h1>
-                                    <p>
-                                    The first Comics Friends collection will be a collection by world renown artist <b>Moebius</b>.
-                                    </p> 
-                                    <p><b>Jean Giraud</b> was a French artist, cartoonist, and writer. He has been described as the most
-                                        influential *bande dessinée* artist. His most famous works include the series Blueberry,
-                                        Arzach, the Incal and many more.
-                                    </p>
-                                    <p>
-                                    The collection is set to launch towards the end of October. Further information will be 
-                                    unveiled within the forum after the release of the Comics Friends membership cards.
-                                    </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <section className='panel' style={{width:'100%'}}>
+                <Partnership/>
                 <div id='team'></div>
             </section>
+
             <section style={{overflowX:'hidden'}} className='section section5'>
                 <div className='team container'>
                     <h1>The team</h1>
                     <p data-aos="fade-up-left">
-                        Introducing the Comics Friends team. The team is made up of a range of individuals with expertise 
+                        Introducing the Comics Friends team. Thee team is made up of a range of individuals with expertise 
                         in their individual fields of work. The commonality between all of them is their shared passion 
                         for the comic book universe.
                     </p>
@@ -305,7 +276,7 @@ function AboutComicsFriends(props) {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> 
 
             <section style={{overflowX:'hidden'}} className='section section7 contact'>
                 <div data-aos="fade-up" className='container'>
