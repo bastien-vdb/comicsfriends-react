@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { Camera } from 'three';
 
 export default function Anim3D_white_gal() {
 
@@ -24,8 +25,7 @@ export default function Anim3D_white_gal() {
 
         camera.position.z = 2;
         camera.position.x = 0;
-        camera.position.y = 1;
-
+        camera.position.y = 3;
 
         const loader = new GLTFLoader();
 
@@ -53,7 +53,6 @@ export default function Anim3D_white_gal() {
         })
 
         let elementSize = canvas.current.offsetHeight;
-        elementSize = elementSize;
             
         function lerp(a,b,t) {
             return ((1 - t) * a + t * b);
@@ -80,7 +79,7 @@ export default function Anim3D_white_gal() {
     
 
     return (
-        <div style={{height:'50vh'}} ref={canvas}>
+        <div style={{height:'100vh'}} ref={canvas}>
 
         </div>
     )
