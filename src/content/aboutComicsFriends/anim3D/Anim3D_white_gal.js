@@ -8,7 +8,7 @@ export default function Anim3D_white_gal() {
     const canvas = useRef(null);
 
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight/2, 0.1, 1000);
 
     const renderer = new THREE.WebGLRenderer({antialias:true, alpha:true });
     renderer.setSize(window.innerWidth, window.innerHeight*2);
@@ -53,7 +53,7 @@ export default function Anim3D_white_gal() {
         })
 
         let elementSize = canvas.current.offsetHeight;
-        elementSize = elementSize*800;
+        elementSize = elementSize;
             
         function lerp(a,b,t) {
             return ((1 - t) * a + t * b);
@@ -66,6 +66,12 @@ export default function Anim3D_white_gal() {
             renderer.render(scene, camera);
         }
 
+        window.addEventListener('resize', ()=>{
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight*2);
+        })
+
         
             animate();
             return ()=>canvas.current.removeChild(renderer.domElement);
@@ -74,7 +80,7 @@ export default function Anim3D_white_gal() {
     
 
     return (
-        <div style={{height:'1vh'}} ref={canvas}>
+        <div style={{height:'50vh'}} ref={canvas}>
 
         </div>
     )

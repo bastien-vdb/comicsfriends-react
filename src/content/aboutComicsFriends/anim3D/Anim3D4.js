@@ -53,13 +53,19 @@ export default function Anim3D4() {
             requestAnimationFrame(animate);
             renderer.render(scene, camera);
         }
+
+        window.addEventListener('resize', ()=>{
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        })
         animate();
 
         return ()=>canvas.current.removeChild(renderer.domElement);
     },[])
 
     return (
-        <div style={{width:'100%'}} ref={canvas}>
+        <div style={{width:'100%', display:'flex'}} ref={canvas}>
 
         </div>
     )

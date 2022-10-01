@@ -76,12 +76,12 @@ function AboutComicsFriends(props) {
                 <Anim3D_white_gal/> 
             </section>
 
-            <section style={{marginTop:'25em'}}>
+            <section>
                 <h1 style={{fontSize:'5em', backgroundColor:'white'}}>COMIC FRIENDS MUSEUM</h1>
             </section>
             
-            <section style={{overflowX:'hidden', marginTop:'10em'}} className='section section1bis'>
-                <div data-aos="fade-down-left" className='aboutComicsFriends' style={{fontWeight:'bold', fontSize:'1em'}}>
+            <section style={{overflowX:'hidden'}} className='section section1bis'>
+                <div data-aos="fade-down-left" className='aboutComicsFriends'>
                     <h1>About Comics Friends</h1>
                     <p style={{lineHeight:'2.2em'   }}>
                         Welcome to Comics Friends, home to all comic books and artwork lovers and admirers.</p>
