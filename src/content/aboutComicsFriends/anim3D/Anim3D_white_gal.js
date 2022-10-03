@@ -12,7 +12,7 @@ export default function Anim3D_white_gal() {
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight/2, 0.1, 1000);
 
     const renderer = new THREE.WebGLRenderer({antialias:true, alpha:true });
-    renderer.setSize(window.innerWidth, window.innerHeight*2);
+    renderer.setSize(window.innerWidth, window.innerHeight*3);
     
     const controls = new OrbitControls(camera, renderer.domElement);
     // controls.enableZoom = false;
@@ -27,7 +27,35 @@ export default function Anim3D_white_gal() {
         camera.position.x = 0;
         camera.position.y = 3;
 
-        const loader = new GLTFLoader();
+        /********************** */
+        const manager = new THREE.LoadingManager();
+        manager.onStart = function ( url, itemsLoaded, itemsTotal ) {
+
+            console.log( 'Started loading file: ' + url + '.\nLoaded ' + itemsLoaded + ' of ' + itemsTotal + ' files.' );
+
+        };
+
+        manager.onLoad = function ( ) {
+
+            console.log( 'Loading complete!');
+
+        };
+
+
+        manager.onProgress = function ( url, itemsLoaded, itemsTotal ) {
+
+            console.log( 'Loading file: ' + url + '.\nLoaded ' + itemsLoaded + ' of ' + itemsTotal + ' files.' );
+
+        };
+
+        manager.onError = function ( url ) {
+
+            console.log( 'There was an error loading ' + url );
+
+        };
+        /********************* */
+
+        const loader = new GLTFLoader(manager);
 
         loader.load('./vr_gallery.glb', (gltf)=>{
             gltf.scene.position.x = 0;
@@ -79,8 +107,10 @@ export default function Anim3D_white_gal() {
     
 
     return (
-        <div style={{height:'100vh'}} ref={canvas}>
-
+        <div style={{height:'200vh'}} ref={canvas}>
+            <h1 style={{position:'absolute'}} className='mt-40 text-6xl p-4 md:mt-80 md:text-8xl md:p-12 lg:mt-80 lg:text-9xl lg:p-32'>Comics friends museum</h1>
+            <div style={{height:'200vh', width:'100%', position:'fixed'}}>
+            </div>
         </div>
     )
 }

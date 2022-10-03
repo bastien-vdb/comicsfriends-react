@@ -8,7 +8,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Card from './newCard/Cards';
 
 import Anim3D4 from './anim3D/Anim3D4';
-import Blocks from '../blocks2/Blocks';
+import Blocks from './blocks/Blocks';
 import Partnership from './Partnership';
 import Anim3D_white_gal from './anim3D/Anim3D_white_gal';
 
@@ -70,14 +70,10 @@ function AboutComicsFriends(props) {
         }
 
     return (
-        <div style={{overscrollBehavior:'none'}}>
+        <div>
             
             <section>
                 <Anim3D_white_gal/> 
-            </section>
-
-            <section>
-                <h1 style={{fontSize:'5em', backgroundColor:'white'}}>COMIC FRIENDS MUSEUM</h1>
             </section>
             
             <section style={{overflowX:'hidden'}} className='section section1bis'>

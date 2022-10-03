@@ -1,5 +1,5 @@
 import AboutComicsFriends from './content/aboutComicsFriends/AboutComicsFriends.js';
-// import Account from './Account/Account';
+import Account from './Account/Account';
 import 'antd/dist/antd.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './App.css';
@@ -43,7 +43,7 @@ function App() {
             </li>
             <li>
             <section id='authentification' className='bg-myblue py-2 px-2 text-3xl rounded hover:scale-110 duration-500'>
-              {/* <a className='text-white hover:text-white' href="#"><Account/></a> */}
+              <a className='text-white hover:text-white' href="#"><Account/></a>
             </section>
             </li>
           </ul>
@@ -64,7 +64,7 @@ function App() {
           </ul>
         </nav>
         <section id='authentification' className='bg-myblue py-2 px-3 rounded hover:scale-110 duration-500'>
-          {/* <a className='text-white hover:text-white' href="#"><Account/></a> */}
+          <a className='text-white hover:text-white' href="#"><Account/></a>
         </section>
       </div>
       <div id='content'>

@@ -21,7 +21,7 @@ export default function Blocks () {
           </div>
           {/* <!--Card 2--> */}
           <div className="rounded overflow-hidden shadow-lg rotate-[-3deg]" style={{backgroundColor:'rgba(255, 255, 255, 0.8)'}}>
-            <img className="w-full" src="/img_logo_comicsFriends/comicsFriendspic3.png" alt="River"/>
+            <img className="w-full" src="img_logo_comicsFriends/comicsFriendspic3.png" alt="River"/>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Creating the first-ever virtual comic museum</div>
               <div className="text-gray-700 text-base">
@@ -38,7 +38,7 @@ export default function Blocks () {
 
           {/* <!--Card 3--> */}
           <div className="rounded overflow-hidden shadow-lg rotate-3" style={{backgroundColor:'rgba(255, 255, 255, 0.8)'}}>
-            <img className="w-full" src="/img_logo_comicsFriends/comicsFriendspic2.png" alt="Forest"/>
+            <img className="w-full" src="img_logo_comicsFriends/comicsFriendspic2.png" alt="Forest"/>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Creating a Web3 collectors forum</div>
               <div className="text-gray-700 text-base">
